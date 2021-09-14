@@ -1,5 +1,5 @@
 from enum import IntEnum
-from _common import DiscoveryFlag, EntityStatus
+from ._common import DiscoveryFlag, EntityStatus
 
 
 ItemFlag = DiscoveryFlag

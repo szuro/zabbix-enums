@@ -1,6 +1,11 @@
-from  ._common_item import *
-from  ._common_trigger import *
-from  ._common_host import *
+from ._common_event import *
+from ._common_host import *
+from ._common_host_group import *
+from ._common_host_interface import *
+from ._common_item import *
+from ._common_problem import *
+from ._common_snmp import *
+from ._common_trigger import *
 
 
 class ItemType(IntEnum):
@@ -22,3 +27,9 @@ class ItemType(IntEnum):
     HTTP_AGENT = 19
     SNMP_AGENT = 20
     SCRIPT = 21
+
+
+class MacroType(IntEnum):
+    TEXT = 0
+    SECRET = 1
+    VAULT = 2

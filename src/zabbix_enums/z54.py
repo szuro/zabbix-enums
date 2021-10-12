@@ -1,3 +1,4 @@
+from ._common import *
 from ._common_event import *
 from ._common_host import *
 from ._common_host_group import *
@@ -6,6 +7,7 @@ from ._common_item import *
 from ._common_problem import *
 from ._common_snmp import *
 from ._common_trigger import *
+from ._common_user_group import *
 
 
 class ItemType(IntEnum):

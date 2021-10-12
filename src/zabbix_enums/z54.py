@@ -1,4 +1,5 @@
 from ._common_audit_log import AuditLogAction
+from ._common_dashboard import *
 from ._common_event import *
 from ._common_host import *
 from ._common_host_group import *
@@ -8,6 +9,9 @@ from ._common_problem import *
 from ._common_snmp import *
 from ._common_trigger import *
 from ._common_user_group import *
+
+
+DashboardStartSlideshow = YesNo
 
 
 class ItemType(IntEnum):
@@ -77,3 +81,26 @@ class AuditLogResourceType(IntEnum):
     USER_ROLE = 44
     AUTH_TOKEN = 45
     SCHEDULED_REPORT = 46
+
+
+class DashboardWidgetType(str, Enum):
+    ACTION_LOG = "actionlog"
+    CLOCK = "clock"
+    DATA_OVERVIEW = "dataover"
+    DISCOVERY_STATUS = "discovery"
+    FAVORITE_GRAPHS = "favgraphs"
+    FAVORITE_MAPS = "favmaps"
+    GRAPH_CLASSIC = "graph"
+    GRAPH_PROTOTYPE = "graphprototype"
+    HOST_AVAILABILITY = "hostavail"
+    MAP = "map"
+    MAP_NAVIGATION_TREE = "navtree"
+    PLAIN_TEXT = "plaintext"
+    PROBLEM_HOSTS = "problemhosts"
+    PROBLEMS = "problems"
+    PROBLEMS_BY_SEVERITY = "problemsbysv"
+    GRAPH = "svggraph"
+    SYSTEM_INFORMATION = "systeminfo"
+    TRIGGER_OVERVIEW = "trigover"
+    URL = "url"
+    WEB_MONITORING = "web"

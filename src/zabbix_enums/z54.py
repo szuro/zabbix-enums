@@ -1,4 +1,5 @@
 from ._common import *
+from ._common_audit_log import AuditLogAction
 from ._common_event import *
 from ._common_host import *
 from ._common_host_group import *

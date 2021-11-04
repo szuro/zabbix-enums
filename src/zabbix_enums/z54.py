@@ -4,6 +4,7 @@ from ._common_event import *
 from ._common_host import *
 from ._common_host_group import *
 from ._common_host_interface import *
+from ._common_item_preprocessing import PreprocessingErrorHandler
 from ._common_item import *
 from ._common_problem import *
 from ._common_snmp import *
@@ -104,3 +105,33 @@ class DashboardWidgetType(str, Enum):
     TRIGGER_OVERVIEW = "trigover"
     URL = "url"
     WEB_MONITORING = "web"
+
+
+class PreprocessingType(IntEnum):
+    CUSTOM_MULTIPLIER = 1
+    RIGHT_TRIM = 2
+    LEFT_TRIM = 3
+    TRIM = 4
+    REGULAR_EXPRESSION = 5
+    BOOLEAN_TO_DECIMAL = 6
+    OCTAL_TO_DECIMAL = 7
+    HEXADECIMAL_TO_DECIMAL = 8
+    SIMPLE_CHANGE = 9
+    CHANGE_PER_SECOND = 10
+    XML_XPATH = 11
+    JSONPATH = 12
+    IN_RANGE = 13
+    MATCHES_REGULAR_EXPRESSION = 14
+    DOES_NOT_MATCH_REGULAR_EXPRESSION = 15
+    CHECK_FOR_ERROR_IN_JSON = 16
+    CHECK_FOR_ERROR_IN_XML = 17
+    CHECK_FOR_ERROR_USING_REGULAR_EXPRESSION = 18
+    DISCARD_UNCHANGED = 19
+    DISCARD_UNCHANGED_WITH_HEARTBEAT = 20
+    JAVASCRIPT = 21
+    PROMETHEUS_PATTERN = 22
+    PROMETHEUS_TO_JSON = 23
+    CSV_TO_JSON = 24
+    REPLACE = 25
+    CHECK_UNSUPPORTED = 26
+    XML_TO_JSON = 27

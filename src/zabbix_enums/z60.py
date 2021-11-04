@@ -62,3 +62,11 @@ class AuditLogAction(IntEnum):
     LOGIN = 8
     FAILED_LOGIN = 9
     HISTORY_CLEAR = 10
+
+
+class EventSource(IntEnum):
+    TRIGGER = 0
+    DISCOVERY = 1
+    AUTOREGISTRATION = 2
+    INTERNAL = 3
+    SERVICE_STATUS_UPDATE = 4

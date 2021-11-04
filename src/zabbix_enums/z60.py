@@ -1,4 +1,3 @@
-from ._common_audit_log import AuditLogAction
 from ._common_dashboard import *
 from ._common_event import *
 from ._common_host import *
@@ -52,3 +51,14 @@ class AuditLogResourceType(IntEnum):
     USER_ROLE = 44
     AUTH_TOKEN = 45
     SCHEDULED_REPORT = 46
+
+
+class AuditLogAction(IntEnum):
+    ADD = 0
+    UPDATE = 1
+    DELETE = 2
+    LOGOUT = 4
+    EXECUTE = 7
+    LOGIN = 8
+    FAILED_LOGIN = 9
+    HISTORY_CLEAR = 10

@@ -17,3 +17,8 @@ class ItemValueType(IntEnum):
 class ItemState(IntEnum):
     NORMAL = 0
     NOT_SUPPORTED = 1
+
+
+class ItemAuthTypeSSH(IntEnum):
+    PASSWORD = 0
+    PUBLIC_KEY = 1

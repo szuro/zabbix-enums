@@ -12,7 +12,7 @@ from ._common_trigger import *
 from ._common_user_group import *
 
 
-DashboardStartSlideshow = YesNo
+DashboardStartSlideshow = NoYes
 
 
 class ItemType(IntEnum):

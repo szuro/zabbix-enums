@@ -1,6 +1,6 @@
 from enum import IntEnum
-from ._common import DiscoveryFlag, YesNo
+from ._common import DiscoveryFlag, NoYes
 
 
 HostGroupFlag = DiscoveryFlag
-HostGroupInternal = YesNo
+HostGroupInternal = NoYes

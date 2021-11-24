@@ -1,9 +1,14 @@
 from enum import IntEnum
 
 
-class YesNo(IntEnum):
+class NoYes(IntEnum):
     NO = 0
     YES = 1
+
+
+class YesNo(IntEnum):
+    YES = 0
+    NO = 1
 
 
 class DiscoveryFlag(IntEnum):
@@ -43,3 +48,8 @@ class ObjectInternal(IntEnum):
     TRIGGER = 0
     ITEM = 4
     LLD = 5
+
+
+class PrototypeDiscover(IntEnum):
+    DISCOVER = 0
+    DONT_DISCOVER = 1

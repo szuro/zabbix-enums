@@ -107,7 +107,7 @@ class DashboardWidgetType(str, Enum):
     WEB_MONITORING = "web"
 
 
-class PreprocessingType(IntEnum):
+class ItemPreprocessingType(IntEnum):
     CUSTOM_MULTIPLIER = 1
     RIGHT_TRIM = 2
     LEFT_TRIM = 3

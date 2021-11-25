@@ -53,3 +53,10 @@ class ObjectInternal(IntEnum):
 class PrototypeDiscover(IntEnum):
     DISCOVER = 0
     DONT_DISCOVER = 1
+
+
+class ObjectSource(IntEnum):
+    TRIGGER = 0
+    DISCOVERY = 1
+    AUTOREGISTRATION = 2
+    INTERNAL = 3

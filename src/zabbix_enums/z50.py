@@ -1,15 +1,15 @@
-from ._common_audit_log import AuditLogAction
-from ._common_dashboard import *
-from ._common_event import *
-from ._common_host import *
-from ._common_host_group import *
-from ._common_host_interface import *
-from ._common_item_preprocessing import PreprocessingErrorHandler
-from ._common_item import *
-from ._common_problem import *
-from ._common_snmp import *
-from ._common_trigger import *
-from ._common_user_group import *
+from .common.audit_log import AuditLogAction
+from .common.dashboard import *
+from .common.event import *
+from .common.host import *
+from .common.host_group import *
+from .common.host_interface import *
+from .common.item_preprocessing import PreprocessingErrorHandler
+from .common.item import *
+from .common.problem import *
+from .common.snmp import *
+from .common.trigger import *
+from .common.user_group import *
 
 
 class ItemType(IntEnum):

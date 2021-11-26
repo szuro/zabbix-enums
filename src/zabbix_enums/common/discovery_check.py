@@ -1,5 +1,5 @@
 from enum import IntEnum
-from ._common import NoYes
+from .._common import NoYes
 
 
 DiscoveryCheckUniq = NoYes

@@ -1,5 +1,5 @@
-from ._common_trigger import TriggerPriority, TrigerStatus, TriggerType, TriggerRecoveryMode, TriggerCorrelationMode, TriggerManualClose
-from ._common import PrototypeDiscover
+from .trigger import TriggerPriority, TrigerStatus, TriggerType, TriggerRecoveryMode, TriggerCorrelationMode, TriggerManualClose
+from .._common import PrototypeDiscover
 
 TriggerPrototypePriority = TriggerPriority
 TriggerPrototypeStatus = TrigerStatus

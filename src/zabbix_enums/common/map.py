@@ -1,5 +1,5 @@
 from enum import IntEnum
-from ._common import NoYes, YesNo
+from .._common import NoYes, YesNo
 
 
 MapExpandMacro = NoYes

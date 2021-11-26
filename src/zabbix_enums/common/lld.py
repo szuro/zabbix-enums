@@ -1,9 +1,9 @@
 from enum import IntEnum
-from ._common import EntityStatus, NoYes, YesNo, Priority
-from ._common_item import ItemAuthTypeSSH
-from ._common_item_http import *
-from ._common_item_preprocessing import PreprocessingErrorHandler
-from ._common_host import HostInventoryMode
+from .._common import EntityStatus, NoYes, YesNo, Priority
+from .item import ItemAuthTypeSSH
+from .item_http import *
+from .item_preprocessing import PreprocessingErrorHandler
+from .host import HostInventoryMode
 
 
 LLDStatus = EntityStatus

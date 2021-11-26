@@ -1,5 +1,5 @@
 from enum import IntEnum
-from ._common import PrototypeDiscover
+from .._common import PrototypeDiscover
 
 
 ItemPrototypeDiscover = PrototypeDiscover

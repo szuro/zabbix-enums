@@ -1,5 +1,5 @@
 from enum import IntEnum
-from ._common import NoYes, EntityStatus, ObjectSource
+from .._common import NoYes, EntityStatus, ObjectSource
 
 
 MediaTypeSMTPSVerifyHost = NoYes

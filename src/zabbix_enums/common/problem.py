@@ -1,5 +1,5 @@
 from enum import IntEnum
-from ._common import Priority, Suppressed, ObjectTrigger, ObjectInternal
+from .._common import Priority, Suppressed, ObjectTrigger, ObjectInternal
 
 
 ProblemSeverity = Priority

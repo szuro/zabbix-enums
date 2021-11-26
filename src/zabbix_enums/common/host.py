@@ -1,5 +1,5 @@
 from enum import IntEnum
-from ._common import DiscoveryFlag
+from .._common import DiscoveryFlag
 
 
 HostFlag = DiscoveryFlag

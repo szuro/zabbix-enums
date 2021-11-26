@@ -1,5 +1,5 @@
 from enum import IntEnum
-from ._common import DiscoveryFlag, EntityStatus, Priority
+from .._common import DiscoveryFlag, EntityStatus, Priority
 
 
 TriggerFlag = DiscoveryFlag

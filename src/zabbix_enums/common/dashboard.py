@@ -1,5 +1,5 @@
 from enum import Enum, IntEnum
-from ._common import NoYes, Permission
+from .._common import NoYes, Permission
 
 
 DashboardPrivate = NoYes

@@ -1,11 +1,11 @@
 from enum import IntEnum
-from .._common import Priority, Suppressed, ObjectTrigger, ObjectInternal
+from . import _Priority, _Suppressed, _ObjectTrigger, _ObjectInternal
 
 
-ProblemSeverity = Priority
-ProblemSuppressed = Suppressed
-ProblemObjectTrigger = ObjectTrigger
-ProblemObjectInternal = ObjectInternal
+ProblemSeverity = _Priority
+ProblemSuppressed = _Suppressed
+ProblemObjectTrigger = _ObjectTrigger
+ProblemObjectInternal = _ObjectInternal
 
 
 class ProblemAcknowledged(IntEnum):

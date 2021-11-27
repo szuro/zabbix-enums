@@ -1,12 +1,12 @@
 from enum import IntEnum
-from .._common import EntityStatus, NoYes, YesNo, Priority
+from . import _EntityStatus, _NoYes, _YesNo, _Priority
 from .item import ItemAuthTypeSSH
 from .item_http import *
 from .item_preprocessing import PreprocessingErrorHandler
 from .host import HostInventoryMode
 
 
-LLDStatus = EntityStatus
+LLDStatus = _EntityStatus
 LLDRuleAllowTraps = ItemAllowTraps
 LLDRuleAuthTypeHTTP = ItemAuthTypeHTTP
 LLDRuleAuthTypeSSH = ItemAuthTypeSSH
@@ -15,7 +15,7 @@ LLDRuleOutputFormat = ItemOutputFormat
 LLDRulePostType = ItemPostType
 LLDRuleRequestMethod = ItemRequestMethod
 LLDRuleRetrieveMode = ItemRetrieveMode
-LLDRuleStatus = EntityStatus
+LLDRuleStatus = _EntityStatus
 LLDRuleVerifyHost = ItemVerifyHost
 LLDRuleVerifyPeer = ItemVerifyPeer
 
@@ -65,11 +65,11 @@ class LLDRulePreprocessing(IntEnum):
 
 
 LLDRulePreprocessingErrorHandler = PreprocessingErrorHandler
-LLDRuleOverridesStop = NoYes
+LLDRuleOverridesStop = _NoYes
 LLDRuleOverrideEvalType = LLDRuleEvalType
 LLDRuleOverrideOperator = LLDRuleOperator
-LLDRuleOverrideOperationDiscover = YesNo
-LLDRuleOverrideOperationSeverity = Priority
+LLDRuleOverrideOperationDiscover = _YesNo
+LLDRuleOverrideOperationSeverity = _Priority
 LLDRuleOverrideOperationInventory = HostInventoryMode
 
 

@@ -1,11 +1,11 @@
 from enum import IntEnum
-from .._common import NoYes
+from . import _NoYes
 
 
-ItemAllowTraps = NoYes
-ItemFollowRedirects = NoYes
-ItemVerifyHost = NoYes
-ItemVerifyPeer = NoYes
+ItemAllowTraps = _NoYes
+ItemFollowRedirects = _NoYes
+ItemVerifyHost = _NoYes
+ItemVerifyPeer = _NoYes
 
 
 class ItemAuthTypeHTTP(IntEnum):

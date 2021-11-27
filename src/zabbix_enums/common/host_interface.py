@@ -1,9 +1,9 @@
 from enum import IntEnum
-from .._common import NoYes
+from . import _NoYes
 
 
-HostInterfaceMain = NoYes
-HostIntrefaceUseIP = NoYes
+HostInterfaceMain = _NoYes
+HostIntrefaceUseIP = _NoYes
 
 
 class HostInterfaceType(IntEnum):

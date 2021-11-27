@@ -1,13 +1,13 @@
 from enum import IntEnum
-from .._common import NoYes, YesNo
+from . import _NoYes
 
 
-MapExpandMacro = NoYes
-MapExpandProblem = NoYes
-MapGridAlignEnable = NoYes
-MapGridShow = NoYes
-MapHighlightEnable = NoYes
-MapMarkElements = NoYes
+MapExpandMacro = _NoYes
+MapExpandProblem = _NoYes
+MapGridAlignEnable = _NoYes
+MapGridShow = _NoYes
+MapHighlightEnable = _NoYes
+MapMarkElements = _NoYes
 
 
 class MapLabelType(IntEnum):

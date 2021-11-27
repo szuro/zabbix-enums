@@ -1,3 +1,3 @@
-from .._common import EntityStatus
+from . import EntityStatus
 
 DiscoveryRuleStatus = EntityStatus

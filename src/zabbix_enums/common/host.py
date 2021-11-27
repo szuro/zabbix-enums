@@ -1,8 +1,8 @@
 from enum import IntEnum
-from .._common import DiscoveryFlag
+from . import _DiscoveryFlag
 
 
-HostFlag = DiscoveryFlag
+HostFlag = _DiscoveryFlag
 
 
 class HostInventoryMode(IntEnum):

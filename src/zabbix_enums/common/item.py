@@ -1,9 +1,9 @@
 from enum import IntEnum
-from .._common import DiscoveryFlag, EntityStatus
+from . import _DiscoveryFlag, _EntityStatus
 
 
-ItemFlag = DiscoveryFlag
-ItemStatus = EntityStatus
+ItemFlag = _DiscoveryFlag
+ItemStatus = _EntityStatus
 
 
 class ItemValueType(IntEnum):

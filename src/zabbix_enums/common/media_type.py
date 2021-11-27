@@ -1,13 +1,13 @@
 from enum import IntEnum
-from .._common import NoYes, EntityStatus, ObjectSource
+from . import _NoYes, _EntityStatus, _ObjectSource
 
 
-MediaTypeSMTPSVerifyHost = NoYes
-MediaTypeSMTPSVerifyPeer = NoYes
-MediaTypeStatus = EntityStatus
-MediaTypeProcessTags = NoYes
-MediaTypeShowEventMenu = NoYes
-MediaTypeEventSource = ObjectSource
+MediaTypeSMTPSVerifyHost = _NoYes
+MediaTypeSMTPSVerifyPeer = _NoYes
+MediaTypeStatus = _EntityStatus
+MediaTypeProcessTags = _NoYes
+MediaTypeShowEventMenu = _NoYes
+MediaTypeEventSource = _ObjectSource
 
 
 class MediaType(IntEnum):

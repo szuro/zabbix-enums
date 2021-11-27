@@ -1,12 +1,12 @@
 from enum import IntEnum
-from .._common import Priority, Suppressed, ObjectTrigger, ObjectInternal, ObjectSource
+from . import _Priority, _Suppressed, _ObjectTrigger, _ObjectInternal, _ObjectSource
 
 
-EventSeverity = Priority
-EventSuppressed = Suppressed
-EventObjectTrigger = ObjectTrigger
-EventObjectInternal = ObjectInternal
-EventSource = ObjectSource
+EventSeverity = _Priority
+EventSuppressed = _Suppressed
+EventObjectTrigger = _ObjectTrigger
+EventObjectInternal = _ObjectInternal
+EventSource = _ObjectSource
 
 
 class EventObjectDiscovery(IntEnum):

@@ -1,8 +1,8 @@
 from enum import IntEnum
-from .._common import PrototypeDiscover
+from . import _PrototypeDiscover
 
 
-ItemPrototypeDiscover = PrototypeDiscover
+ItemPrototypeDiscover = _PrototypeDiscover
 
 
 class ItemPrototypeStatus(IntEnum):

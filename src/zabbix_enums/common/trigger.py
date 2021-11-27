@@ -3,7 +3,7 @@ from . import _DiscoveryFlag, _EntityStatus, _Priority
 
 
 TriggerFlag = _DiscoveryFlag
-TrigerStatus = _EntityStatus
+TriggerStatus = _EntityStatus
 TriggerPriority = _Priority
 
 

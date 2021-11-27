@@ -10,8 +10,3 @@ class ScriptExecuteOn(IntEnum):
 class ScriptHostAccess(IntEnum):
     READ = 2
     WRITE = 3
-
-
-class ScriptType(IntEnum):
-    SCRIPT = 0
-    IPMI = 1

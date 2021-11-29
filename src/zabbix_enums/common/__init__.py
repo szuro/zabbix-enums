@@ -70,6 +70,9 @@ from .discovered_service import *
 from .discovery_check import *
 from .discovery_rule import *
 from .event import *
+from .graph import *
+from .graph_item import *
+from .graph_prototype import *
 from .host import *
 from .host_group import *
 from .host_interface import *
@@ -88,5 +91,6 @@ from .proxy import *
 from .script import *
 from .snmp import *
 from .task import *
+from .trigger_prototype import *
 from .trigger import *
 from .user_group import *

@@ -1,4 +1,3 @@
-from enum import IntEnum
 from . import _DiscoveryFlag, _NoYes
 
 

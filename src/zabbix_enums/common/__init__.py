@@ -1,6 +1,13 @@
 from enum import IntEnum
 
 
+class _ZabbixEnum(IntEnum):
+    @classmethod
+    def _missing_(cls, value):
+        if isinstance(value, str):
+            return cls(int(value))
+
+
 class _NoYes(IntEnum):
     NO = 0
     YES = 1

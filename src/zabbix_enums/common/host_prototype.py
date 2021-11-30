@@ -1,4 +1,3 @@
-from enum import IntEnum
 from .host import HostStatus, HostInventoryMode
 from . import _PrototypeDiscover
 

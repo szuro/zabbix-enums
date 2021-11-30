@@ -1,3 +1,3 @@
-from . import EntityStatus
+from . import _EntityStatus
 
-DiscoveryRuleStatus = EntityStatus
+DiscoveryRuleStatus = _EntityStatus

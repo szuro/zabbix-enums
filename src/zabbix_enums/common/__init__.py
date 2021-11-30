@@ -86,7 +86,6 @@ from .lld import *
 from .map import *
 from .media_type import *
 from .problem import *
-from .prototype import *
 from .proxy import *
 from .script import *
 from .snmp import *

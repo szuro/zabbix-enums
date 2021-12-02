@@ -1,5 +1,4 @@
-from enum import IntEnum
-from . import _Priority, _Suppressed, _ObjectTrigger, _ObjectInternal
+from . import _Priority, _Suppressed, _ObjectTrigger, _ObjectInternal, _ZabbixEnum
 
 
 ProblemSeverity = _Priority
@@ -8,11 +7,11 @@ ProblemObjectTrigger = _ObjectTrigger
 ProblemObjectInternal = _ObjectInternal
 
 
-class ProblemAcknowledged(IntEnum):
+class ProblemAcknowledged(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class ProblemSource(IntEnum):
+class ProblemSource(_ZabbixEnum):
     TRIGGER = 0
     INTERNAL = 3

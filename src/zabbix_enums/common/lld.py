@@ -1,5 +1,4 @@
-from enum import IntEnum
-from . import _EntityStatus, _NoYes, _YesNo, _Priority
+from . import _EntityStatus, _NoYes, _YesNo, _Priority, _ZabbixEnum
 from .item import ItemAuthTypeSSH
 from .item_http import *
 from .item_preprocessing import PreprocessingErrorHandler
@@ -21,7 +20,7 @@ LLDRuleVerifyPeer = ItemVerifyPeer
 
 
 
-class LLDRuleEvalType(IntEnum):
+class LLDRuleEvalType(_ZabbixEnum):
     AND_OR = 0
     AND = 1
     OR = 2
@@ -36,14 +35,14 @@ LLDRuleOverrideOperationSeverity = _Priority
 LLDRuleOverrideOperationInventory = HostInventoryMode
 
 
-class LLDRuleOverrideOperationObject(IntEnum):
+class LLDRuleOverrideOperationObject(_ZabbixEnum):
     ITEM = 0
     TRIGGER = 1
     GRAPH = 2
     HOST = 3
 
 
-class LLDRuleOverrideOperationOperator(IntEnum):
+class LLDRuleOverrideOperationOperator(_ZabbixEnum):
     EQUALS = 0
     DOES_NOT_EQUAL = 1
     CONTAINS = 2
@@ -52,6 +51,6 @@ class LLDRuleOverrideOperationOperator(IntEnum):
     DOES_NOT_MATCH = 9
 
 
-class LLDRuleOverrideOperationStatus(IntEnum):
+class LLDRuleOverrideOperationStatus(_ZabbixEnum):
     CREATE_ENABLED = 0
     CREATE_DISABLED = 1

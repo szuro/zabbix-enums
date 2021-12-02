@@ -1,5 +1,4 @@
-from enum import IntEnum
-from . import _Priority, _Suppressed, _ObjectTrigger, _ObjectInternal, _ObjectSource
+from . import _ZabbixEnum, _Priority, _Suppressed, _ObjectTrigger, _ObjectInternal, _ObjectSource
 
 
 EventSeverity = _Priority
@@ -9,10 +8,10 @@ EventObjectInternal = _ObjectInternal
 EventSource = _ObjectSource
 
 
-class EventObjectDiscovery(IntEnum):
+class EventObjectDiscovery(_ZabbixEnum):
     HOST = 1
     SERVICE = 2
 
 
-class EventObjectAutoregistration(IntEnum):
+class EventObjectAutoregistration(_ZabbixEnum):
     HOST = 3

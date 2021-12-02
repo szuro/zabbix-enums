@@ -1,12 +1,11 @@
-from enum import IntEnum
-from . import _DiscoveryFlag, _EntityStatus
+from . import _DiscoveryFlag, _EntityStatus, _ZabbixEnum
 
 
 ItemFlag = _DiscoveryFlag
 ItemStatus = _EntityStatus
 
 
-class ItemValueType(IntEnum):
+class ItemValueType(_ZabbixEnum):
     NUMERIC_FLOAT = 0
     CHARACTER = 1
     LOG = 2
@@ -14,11 +13,11 @@ class ItemValueType(IntEnum):
     TEXT = 4
 
 
-class ItemState(IntEnum):
+class ItemState(_ZabbixEnum):
     NORMAL = 0
     NOT_SUPPORTED = 1
 
 
-class ItemAuthTypeSSH(IntEnum):
+class ItemAuthTypeSSH(_ZabbixEnum):
     PASSWORD = 0
     PUBLIC_KEY = 1

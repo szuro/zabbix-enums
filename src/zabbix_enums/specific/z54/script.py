@@ -1,7 +1,7 @@
-from enum import IntEnum
+from zabbix_enums.common import _ZabbixEnum
 
 
-class ScriptType(IntEnum):
+class ScriptType(_ZabbixEnum):
     SCRIPT = 0
     IPMI = 1
     SSH = 2
@@ -9,7 +9,7 @@ class ScriptType(IntEnum):
     WEBHOOK = 5
 
 
-class ScriptScope(IntEnum):
+class ScriptScope(_ZabbixEnum):
     ACTION = 1
     MANUAL_HOST = 2
     MANUAL_EVENT = 4

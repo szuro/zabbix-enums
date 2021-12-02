@@ -1,5 +1,4 @@
-from enum import IntEnum
-from . import _NoYes
+from . import _NoYes, _ZabbixEnum
 
 
 MapExpandMacro = _NoYes
@@ -10,7 +9,7 @@ MapHighlightEnable = _NoYes
 MapMarkElements = _NoYes
 
 
-class MapLabelType(IntEnum):
+class MapLabelType(_ZabbixEnum):
     LABEL = 0
     IP_ADDRESS = 1
     ELEMENT_NAME = 2
@@ -18,7 +17,7 @@ class MapLabelType(IntEnum):
     NOTHING = 4
 
 
-class MapLabelTypeHost(IntEnum):
+class MapLabelTypeHost(_ZabbixEnum):
     LABEL = 0
     IP_ADDRESS = 1
     ELEMENT_NAME = 2
@@ -27,7 +26,7 @@ class MapLabelTypeHost(IntEnum):
     CUSTOM = 5
 
 
-class MapLabelTypeHostGroup(IntEnum):
+class MapLabelTypeHostGroup(_ZabbixEnum):
     LABEL = 0
     ELEMENT_NAME = 2
     STATUS = 3
@@ -35,14 +34,14 @@ class MapLabelTypeHostGroup(IntEnum):
     CUSTOM = 5
 
 
-class MapLabelTypeImage(IntEnum):
+class MapLabelTypeImage(_ZabbixEnum):
     LABEL = 0
     ELEMENT_NAME = 2
     NOTHING = 4
     CUSTOM = 5
 
 
-class MapLabelTypeMap(IntEnum):
+class MapLabelTypeMap(_ZabbixEnum):
     LABEL = 0
     ELEMENT_NAME = 2
     STATUS = 3
@@ -50,7 +49,7 @@ class MapLabelTypeMap(IntEnum):
     CUSTOM = 5
 
 
-class MapLabelTypeTrigger(IntEnum):
+class MapLabelTypeTrigger(_ZabbixEnum):
     LABEL = 0
     ELEMENT_NAME = 2
     STATUS = 3

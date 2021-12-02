@@ -1,5 +1,4 @@
-from enum import IntEnum
-from . import _DiscoveryFlag, _NoYes
+from . import _DiscoveryFlag, _NoYes, _ZabbixEnum
 
 
 GraphFlag = _DiscoveryFlag
@@ -9,14 +8,14 @@ GraphShowWorkPeriod = _NoYes
 GraphShowTriggers = _NoYes
 
 
-class GraphType(IntEnum):
+class GraphType(_ZabbixEnum):
     NORMAL = 0
     STACKED = 1
     PIE = 2
     EXPLODED = 3
 
 
-class GraphYmaxType(IntEnum):
+class GraphYmaxType(_ZabbixEnum):
     CALCULATED = 0
     FIXED = 1
     ITEMS = 2

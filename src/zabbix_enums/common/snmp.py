@@ -1,7 +1,7 @@
-from enum import IntEnum
+from . import _ZabbixEnum
 
 
-class SNMPAuthProtocol(IntEnum):
+class SNMPAuthProtocol(_ZabbixEnum):
     MD5 = 0
     SHA1 = 1
     SHA224 = 2
@@ -10,7 +10,7 @@ class SNMPAuthProtocol(IntEnum):
     SHA512 = 5
 
 
-class SNMPPrivProtocol(IntEnum):
+class SNMPPrivProtocol(_ZabbixEnum):
     DES = 0
     AES128 = 1
     AES192 = 2

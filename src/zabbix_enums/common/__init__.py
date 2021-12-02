@@ -8,32 +8,32 @@ class _ZabbixEnum(IntEnum):
             return cls(int(value))
 
 
-class _NoYes(IntEnum):
+class _NoYes(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class _YesNo(IntEnum):
+class _YesNo(_ZabbixEnum):
     YES = 0
     NO = 1
 
 
-class _DiscoveryFlag(IntEnum):
+class _DiscoveryFlag(_ZabbixEnum):
     PLAIN = 0
     DISCOVERED = 4
 
 
-class _EntityStatus(IntEnum):
+class _EntityStatus(_ZabbixEnum):
     ENABLED = 0
     DISABLED = 1
 
 
-class _Permission(IntEnum):
+class _Permission(_ZabbixEnum):
     READ_ONLY = 2
     READ_WRITE = 3
 
 
-class _Priority(IntEnum):
+class _Priority(_ZabbixEnum):
     NOT_CLASSIFIED = 0
     INFORMATION = 1
     WARNING = 2
@@ -42,27 +42,27 @@ class _Priority(IntEnum):
     DISASTER = 5
 
 
-class _Suppressed(IntEnum):
+class _Suppressed(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class _ObjectTrigger(IntEnum):
+class _ObjectTrigger(_ZabbixEnum):
     TRIGGER = 0
 
 
-class _ObjectInternal(IntEnum):
+class _ObjectInternal(_ZabbixEnum):
     TRIGGER = 0
     ITEM = 4
     LLD = 5
 
 
-class _PrototypeDiscover(IntEnum):
+class _PrototypeDiscover(_ZabbixEnum):
     DISCOVER = 0
     DONT_DISCOVER = 1
 
 
-class _ObjectSource(IntEnum):
+class _ObjectSource(_ZabbixEnum):
     TRIGGER = 0
     DISCOVERY = 1
     AUTOREGISTRATION = 2

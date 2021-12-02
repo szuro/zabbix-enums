@@ -1,8 +1,7 @@
-from enum import IntEnum
-from . import _NoYes
+from . import _NoYes,_ZabbixEnum
 
 
-class ProxyStatus(IntEnum):
+class ProxyStatus(_ZabbixEnum):
     ACTIVE = 5
     PASSIVE = 6
 

@@ -1,11 +1,10 @@
-from enum import IntEnum
-from . import _NoYes
+from . import _NoYes, _ZabbixEnum
 
 
 DiscoveryCheckUniq = _NoYes
 
 
-class DiscoveryCheckType(IntEnum):
+class DiscoveryCheckType(_ZabbixEnum):
     SSH = 0
     LDAP = 1
     SMTP = 2
@@ -24,13 +23,13 @@ class DiscoveryCheckType(IntEnum):
     TELNET = 15
 
 
-class DiscoveryCheckHostSource(IntEnum):
+class DiscoveryCheckHostSource(_ZabbixEnum):
     DNS = 1
     IP = 2
     CHECK_VALUE = 3
 
 
-class DiscoveryCheckNameSource(IntEnum):
+class DiscoveryCheckNameSource(_ZabbixEnum):
     NOT_SCPECIFIED = 0
     DNS = 1
     IP = 2

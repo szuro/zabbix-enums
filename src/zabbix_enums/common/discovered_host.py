@@ -1,6 +1,6 @@
-from enum import IntEnum
+from . import _ZabbixEnum
 
 
-class DiscoveredHostStatus(IntEnum):
+class DiscoveredHostStatus(_ZabbixEnum):
     UP = 0
     DOWN = 1

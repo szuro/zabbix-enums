@@ -1,7 +1,7 @@
-from enum import IntEnum
+from zabbix_enums.common import _ZabbixEnum
 
 
-class ItemType(IntEnum):
+class ItemType(_ZabbixEnum):
     ZABBIX_AGENT = 0
     ZABBIX_TRAPPER = 2
     SIMPLE_CHECK = 3
@@ -22,7 +22,7 @@ class ItemType(IntEnum):
     SCRIPT = 21
 
 
-class ItemPreprocessingType(IntEnum):
+class ItemPreprocessingType(_ZabbixEnum):
     CUSTOM_MULTIPLIER = 1
     RIGHT_TRIM = 2
     LEFT_TRIM = 3

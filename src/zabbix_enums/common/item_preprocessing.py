@@ -1,7 +1,7 @@
-from enum import IntEnum
+from . import _ZabbixEnum
 
 
-class PreprocessingErrorHandler(IntEnum):
+class PreprocessingErrorHandler(_ZabbixEnum):
     ERROR_MESSAGE = 0
     DISCARD_VALUE = 1
     CUSTOM_VALUE = 2

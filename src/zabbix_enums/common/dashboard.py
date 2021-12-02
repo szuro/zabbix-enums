@@ -1,5 +1,4 @@
-from enum import IntEnum
-from . import _NoYes, _Permission
+from . import _NoYes, _Permission, _ZabbixEnum
 
 
 DashboardPrivate = _NoYes
@@ -8,7 +7,7 @@ DashboardUserPermission = _Permission
 DashboardWidgetHeaderHidden = _NoYes
 
 
-class DashboardWidgetField(IntEnum):
+class DashboardWidgetField(_ZabbixEnum):
     INTEGER = 0
     STRING = 1
     HOST_GROUP = 2

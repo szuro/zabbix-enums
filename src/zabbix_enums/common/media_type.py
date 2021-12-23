@@ -1,5 +1,5 @@
 from enum import IntEnum
-from . import _EntityStatus, _ObjectSource
+from . import _EntityStatus
 
 
 class MediaTypeSMTPSVerifyHost(IntEnum):
@@ -25,7 +25,11 @@ class MediaTypeShowEventMenu(IntEnum):
     YES = 1
 
 
-MediaTypeEventSource = _ObjectSource
+class MediaTypeEventSource(IntEnum):
+    TRIGGER = 0
+    DISCOVERY = 1
+    AUTOREGISTRATION = 2
+    INTERNAL = 3
 
 
 class MediaType(IntEnum):

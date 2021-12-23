@@ -20,11 +20,6 @@ class _Priority(IntEnum):
     DISASTER = 5
 
 
-class _Suppressed(IntEnum):
-    NO = 0
-    YES = 1
-
-
 class _ObjectTrigger(IntEnum):
     TRIGGER = 0
 
@@ -38,13 +33,6 @@ class _ObjectInternal(IntEnum):
 class _PrototypeDiscover(IntEnum):
     DISCOVER = 0
     DONT_DISCOVER = 1
-
-
-class _ObjectSource(IntEnum):
-    TRIGGER = 0
-    DISCOVERY = 1
-    AUTOREGISTRATION = 2
-    INTERNAL = 3
 
 
 from .alert import *

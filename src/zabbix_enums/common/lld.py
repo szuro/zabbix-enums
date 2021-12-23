@@ -1,5 +1,5 @@
 from enum import IntEnum
-from . import _EntityStatus, _YesNo, _Priority
+from . import _EntityStatus, _Priority
 from .item import ItemAuthTypeSSH
 from .item_http import *
 from .item_preprocessing import PreprocessingErrorHandler
@@ -37,7 +37,13 @@ class LLDRuleOverridesStop(IntEnum):
 
 
 LLDRuleOverrideEvalType = LLDRuleEvalType
-LLDRuleOverrideOperationDiscover = _YesNo
+
+
+class LLDRuleOverrideOperationDiscover(IntEnum):
+    YES = 0
+    NO = 1
+
+
 LLDRuleOverrideOperationSeverity = _Priority
 LLDRuleOverrideOperationInventory = HostInventoryMode
 

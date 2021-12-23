@@ -1,11 +1,6 @@
 from enum import IntEnum
 
 
-class _YesNo(IntEnum):
-    YES = 0
-    NO = 1
-
-
 class _DiscoveryFlag(IntEnum):
     PLAIN = 0
     DISCOVERED = 4

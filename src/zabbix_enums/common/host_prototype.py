@@ -1,6 +1,11 @@
+from enum import IntEnum
 from .host import HostStatus, HostInventoryMode
-from . import _PrototypeDiscover
+
 
 HostPrototypeStatus = HostStatus
 HostPrototypeInventoryMode = HostInventoryMode
-HostPrototypeDiscover = _PrototypeDiscover
+
+
+class HostPrototypeDiscover(IntEnum):
+    DISCOVER = 0
+    DONT_DISCOVER = 1

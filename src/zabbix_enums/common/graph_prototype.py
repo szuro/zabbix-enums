@@ -1,4 +1,3 @@
-from . import _PrototypeDiscover
 from .graph import *
 
 
@@ -25,4 +24,8 @@ class GraphPrototypeShowTriggers(IntEnum):
 GraphPrototypeType = GraphType
 GraphPrototypeYmaxType = GraphYmaxType
 GraphPrototypeYminType = GraphPrototypeYmaxType
-GrapPrototypeDiscover = _PrototypeDiscover
+
+
+class GrapPrototypeDiscover(IntEnum):
+    DISCOVER = 0
+    DONT_DISCOVER = 1

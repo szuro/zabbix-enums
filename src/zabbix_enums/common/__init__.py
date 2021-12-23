@@ -6,11 +6,6 @@ class _EntityStatus(IntEnum):
     DISABLED = 1
 
 
-class _PrototypeDiscover(IntEnum):
-    DISCOVER = 0
-    DONT_DISCOVER = 1
-
-
 from .alert import *
 from .audit_log import *
 from .dashboard import *

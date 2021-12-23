@@ -91,7 +91,7 @@ def enumify_trigger(trigger: dict, enum_library: ModuleType, deep_enumify: bool 
         'manual_close': enum_library.TriggerManualClose
     }
     members = {
-        'groups': None,
+        'groups': enumify_hostgroup,
         'hosts': enumify_host,
         'items': enumify_item,
         'lastEvent': None,
@@ -113,3 +113,18 @@ def enumify_interface(interface: dict, enum_library: ModuleType, deep_enumify: b
     }
     interface = _enumify_entity(interface, field_mapping, members, enum_library, deep_enumify)
     return interface
+
+
+def enumify_hostgroup(hostgroup: dict, enum_library: ModuleType, deep_enumify: bool = False) -> dict:
+    field_mapping = {
+        'flags': enum_library.HostGroupFlag,
+        'internal': enum_library.HostGroupInternal
+    }
+    members = {
+        'discoveryRule': None,
+        'groupDiscovery ': None,
+        'hosts': enumify_host,
+        'templates': None
+    }
+    hostgroup = _enumify_entity(hostgroup, field_mapping, members, enum_library, deep_enumify)
+    return hostgroup

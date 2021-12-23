@@ -1,8 +1,13 @@
 from enum import IntEnum
-from . import _Priority
 
 
-ProblemSeverity = _Priority
+class ProblemSeverity(IntEnum):
+    NOT_CLASSIFIED = 0
+    INFORMATION = 1
+    WARNING = 2
+    AVERAGE = 3
+    HIGH = 4
+    DISASTER = 5
 
 
 class ProblemSuppressed(IntEnum):

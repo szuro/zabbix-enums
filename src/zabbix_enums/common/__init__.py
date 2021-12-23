@@ -6,15 +6,6 @@ class _EntityStatus(IntEnum):
     DISABLED = 1
 
 
-class _Priority(IntEnum):
-    NOT_CLASSIFIED = 0
-    INFORMATION = 1
-    WARNING = 2
-    AVERAGE = 3
-    HIGH = 4
-    DISASTER = 5
-
-
 class _PrototypeDiscover(IntEnum):
     DISCOVER = 0
     DONT_DISCOVER = 1

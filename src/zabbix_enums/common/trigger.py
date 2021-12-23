@@ -1,5 +1,5 @@
 from enum import IntEnum
-from . import _EntityStatus, _Priority
+from . import _EntityStatus
 
 
 class TriggerFlag(IntEnum):
@@ -8,7 +8,15 @@ class TriggerFlag(IntEnum):
 
 
 TriggerStatus = _EntityStatus
-TriggerPriority = _Priority
+
+
+class TriggerPriority(IntEnum):
+    NOT_CLASSIFIED = 0
+    INFORMATION = 1
+    WARNING = 2
+    AVERAGE = 3
+    HIGH = 4
+    DISASTER = 5
 
 
 class TriggerState(IntEnum):

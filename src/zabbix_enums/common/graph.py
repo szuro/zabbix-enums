@@ -1,12 +1,28 @@
 from enum import IntEnum
-from . import _DiscoveryFlag, _NoYes
+from . import _DiscoveryFlag
 
 
 GraphFlag = _DiscoveryFlag
-GraphShow3d = _NoYes
-GraphShowLegend = _NoYes
-GraphShowWorkPeriod = _NoYes
-GraphShowTriggers = _NoYes
+
+
+class GraphShow3d(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class GraphShowLegend(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class GraphShowWorkPeriod(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class GraphShowTriggers(IntEnum):
+    NO = 0
+    YES = 1
 
 
 class GraphType(IntEnum):

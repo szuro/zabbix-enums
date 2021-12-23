@@ -1,11 +1,27 @@
-from . import _PrototypeDiscover, _NoYes
+from . import _PrototypeDiscover
 from .graph import *
 
 
-GraphPrototypeShow3d = _NoYes
-GraphPrototypeShowLegend = _NoYes
-GraphPrototypeShowWorkPeriod = _NoYes
-GraphPrototypeShowTriggers = _NoYes
+class GraphPrototypeShow3d(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class GraphPrototypeShowLegend(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class GraphPrototypeShowWorkPeriod(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class GraphPrototypeShowTriggers(IntEnum):
+    NO = 0
+    YES = 1
+
+
 GraphPrototypeType = GraphType
 GraphPrototypeYmaxType = GraphYmaxType
 GraphPrototypeYminType = GraphPrototypeYmaxType

@@ -1,5 +1,4 @@
 from enum import IntEnum
-from . import _NoYes
 
 
 class ProxyStatus(IntEnum):
@@ -7,4 +6,8 @@ class ProxyStatus(IntEnum):
     PASSIVE = 6
 
 ProxyType = ProxyStatus
-ProxyUseIp = _NoYes
+
+
+class ProxyUseIp(IntEnum):
+    NO = 0
+    YES = 1

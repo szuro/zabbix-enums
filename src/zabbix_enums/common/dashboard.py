@@ -1,11 +1,17 @@
 from enum import IntEnum
-from . import _NoYes, _Permission
+from . import _Permission
 
 
-DashboardPrivate = _NoYes
+class DashboardPrivate(IntEnum):
+    NO = 0
+    YES = 1
+
 DashboardUserGroupPermission = _Permission
 DashboardUserPermission = _Permission
-DashboardWidgetHeaderHidden = _NoYes
+
+class DashboardWidgetHeaderHidden(IntEnum):
+    NO = 0
+    YES = 1
 
 
 class DashboardWidgetField(IntEnum):

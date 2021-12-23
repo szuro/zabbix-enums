@@ -1,3 +1,6 @@
-from . import _EntityStatus
+from enum import IntEnum
 
-DiscoveryRuleStatus = _EntityStatus
+
+class DiscoveryRuleStatus(IntEnum):
+    ENABLED = 0
+    DISABLED = 1

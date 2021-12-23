@@ -1,12 +1,15 @@
 from enum import IntEnum
-from . import _EntityStatus
 from .item import ItemAuthTypeSSH
 from .item_http import *
 from .item_preprocessing import PreprocessingErrorHandler
 from .host import HostInventoryMode
 
 
-LLDStatus = _EntityStatus
+class LLDStatus(IntEnum):
+    ENABLED = 0
+    DISABLED = 1
+
+
 LLDRuleAllowTraps = ItemAllowTraps
 LLDRuleAuthTypeHTTP = ItemAuthTypeHTTP
 LLDRuleAuthTypeSSH = ItemAuthTypeSSH
@@ -15,7 +18,13 @@ LLDRuleOutputFormat = ItemOutputFormat
 LLDRulePostType = ItemPostType
 LLDRuleRequestMethod = ItemRequestMethod
 LLDRuleRetrieveMode = ItemRetrieveMode
-LLDRuleStatus = _EntityStatus
+
+
+class LLDRuleStatus(IntEnum):
+    ENABLED = 0
+    DISABLED = 1
+
+
 LLDRuleVerifyHost = ItemVerifyHost
 LLDRuleVerifyPeer = ItemVerifyPeer
 

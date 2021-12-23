@@ -1,5 +1,4 @@
 from enum import IntEnum
-from . import _EntityStatus
 
 
 class TriggerFlag(IntEnum):
@@ -7,7 +6,9 @@ class TriggerFlag(IntEnum):
     DISCOVERED = 4
 
 
-TriggerStatus = _EntityStatus
+class TriggerStatus(IntEnum):
+    ENABLED = 0
+    DISABLED = 1
 
 
 class TriggerPriority(IntEnum):

@@ -1,11 +1,3 @@
-from enum import IntEnum
-
-
-class _EntityStatus(IntEnum):
-    ENABLED = 0
-    DISABLED = 1
-
-
 from .alert import *
 from .audit_log import *
 from .dashboard import *

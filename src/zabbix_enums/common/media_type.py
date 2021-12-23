@@ -1,5 +1,4 @@
 from enum import IntEnum
-from . import _EntityStatus
 
 
 class MediaTypeSMTPSVerifyHost(IntEnum):
@@ -12,7 +11,9 @@ class MediaTypeSMTPSVerifyPeer(IntEnum):
     YES = 1
 
 
-MediaTypeStatus = _EntityStatus
+class MediaTypeStatus(IntEnum):
+    ENABLED = 0
+    DISABLED = 1
 
 
 class MediaTypeProcessTags(IntEnum):

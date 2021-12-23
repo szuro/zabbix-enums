@@ -1,8 +1,9 @@
 from enum import IntEnum
-from . import _DiscoveryFlag
 
 
-GraphFlag = _DiscoveryFlag
+class GraphFlag(IntEnum):
+    PLAIN = 0
+    DISCOVERED = 4
 
 
 class GraphShow3d(IntEnum):

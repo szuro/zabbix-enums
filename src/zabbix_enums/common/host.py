@@ -1,8 +1,10 @@
 from enum import IntEnum
-from . import _DiscoveryFlag
 
 
-HostFlag = _DiscoveryFlag
+class HostFlag(IntEnum):
+    PLAIN = 0
+    DISCOVERED = 4
+
 
 
 class HostInventoryMode(IntEnum):

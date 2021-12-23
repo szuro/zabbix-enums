@@ -1,8 +1,12 @@
 from .trigger import *
-from . import _DiscoveryFlag, _EntityStatus, _Priority
+from . import _EntityStatus, _Priority
 
 
-TriggerPrototypeFlag = _DiscoveryFlag
+class TriggerPrototypeFlag(IntEnum):
+    PLAIN = 0
+    DISCOVERED = 4
+
+
 TriggerPrototypeStatus = _EntityStatus
 TriggerPrototypePriority = _Priority
 TriggerPrototypeState = TriggerState

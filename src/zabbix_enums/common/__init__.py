@@ -1,11 +1,6 @@
 from enum import IntEnum
 
 
-class _DiscoveryFlag(IntEnum):
-    PLAIN = 0
-    DISCOVERED = 4
-
-
 class _EntityStatus(IntEnum):
     ENABLED = 0
     DISABLED = 1

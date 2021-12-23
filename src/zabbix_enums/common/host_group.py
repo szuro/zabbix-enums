@@ -1,8 +1,9 @@
 from enum import IntEnum
-from . import _DiscoveryFlag
 
 
-HostGroupFlag = _DiscoveryFlag
+class HostGroupFlag(IntEnum):
+    PLAIN = 0
+    DISCOVERED = 4
 
 
 class HostGroupInternal(IntEnum):

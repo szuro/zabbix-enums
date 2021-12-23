@@ -20,16 +20,6 @@ class _Priority(IntEnum):
     DISASTER = 5
 
 
-class _ObjectTrigger(IntEnum):
-    TRIGGER = 0
-
-
-class _ObjectInternal(IntEnum):
-    TRIGGER = 0
-    ITEM = 4
-    LLD = 5
-
-
 class _PrototypeDiscover(IntEnum):
     DISCOVER = 0
     DONT_DISCOVER = 1

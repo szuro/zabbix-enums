@@ -1,5 +1,5 @@
 from enum import IntEnum
-from . import _Priority, _ObjectTrigger, _ObjectInternal
+from . import _Priority
 
 
 EventSeverity = _Priority
@@ -10,8 +10,14 @@ class EventSuppressed(IntEnum):
     YES = 1
 
 
-EventObjectTrigger = _ObjectTrigger
-EventObjectInternal = _ObjectInternal
+class EventObjectTrigger(IntEnum):
+    TRIGGER = 0
+
+
+class EventObjectInternal(IntEnum):
+    TRIGGER = 0
+    ITEM = 4
+    LLD = 5
 
 
 class EventSource(IntEnum):

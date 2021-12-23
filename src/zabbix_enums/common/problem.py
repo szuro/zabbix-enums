@@ -1,5 +1,5 @@
 from enum import IntEnum
-from . import _Priority, _ObjectTrigger, _ObjectInternal
+from . import _Priority
 
 
 ProblemSeverity = _Priority
@@ -10,8 +10,14 @@ class ProblemSuppressed(IntEnum):
     YES = 1
 
 
-ProblemObjectTrigger = _ObjectTrigger
-ProblemObjectInternal = _ObjectInternal
+class ProblemObjectTrigger(IntEnum):
+    TRIGGER = 0
+
+
+class ProblemObjectInternal(IntEnum):
+    TRIGGER = 0
+    ITEM = 4
+    LLD = 5
 
 
 class ProblemAcknowledged(IntEnum):

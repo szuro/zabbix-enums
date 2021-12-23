@@ -6,11 +6,6 @@ class _EntityStatus(IntEnum):
     DISABLED = 1
 
 
-class _Permission(IntEnum):
-    READ_ONLY = 2
-    READ_WRITE = 3
-
-
 class _Priority(IntEnum):
     NOT_CLASSIFIED = 0
     INFORMATION = 1

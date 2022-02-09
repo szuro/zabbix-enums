@@ -6,20 +6,8 @@ class TriggerPrototypeFlag(IntEnum):
     DISCOVERED = 4
 
 
-class TriggerPrototypeStatus(IntEnum):
-    ENABLED = 0
-    DISABLED = 1
-
-
-class TriggerPrototypePriority(IntEnum):
-    NOT_CLASSIFIED = 0
-    INFORMATION = 1
-    WARNING = 2
-    AVERAGE = 3
-    HIGH = 4
-    DISASTER = 5
-
-
+TriggerPrototypeStatus = TriggerStatus
+TriggerPrototypePriority = TriggerPriority
 TriggerPrototypeState = TriggerState
 TriggerPrototypeType = TriggerType
 TriggerPrototypeValue = TriggerValue

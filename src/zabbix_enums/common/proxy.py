@@ -5,7 +5,10 @@ class ProxyStatus(IntEnum):
     ACTIVE = 5
     PASSIVE = 6
 
-ProxyType = ProxyStatus
+
+class ProxyType(IntEnum):
+    ACTIVE = 5
+    PASSIVE = 6
 
 
 class ProxyUseIp(IntEnum):

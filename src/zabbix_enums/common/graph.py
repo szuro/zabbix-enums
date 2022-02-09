@@ -38,4 +38,8 @@ class GraphYmaxType(IntEnum):
     FIXED = 1
     ITEMS = 2
 
-GraphYminType = GraphYmaxType
+
+class GraphYminType(IntEnum):
+    CALCULATED = 0
+    FIXED = 1
+    ITEMS = 2

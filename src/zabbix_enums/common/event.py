@@ -1,12 +1,35 @@
 from enum import IntEnum
-from . import _Priority, _Suppressed, _ObjectTrigger, _ObjectInternal, _ObjectSource
 
 
-EventSeverity = _Priority
-EventSuppressed = _Suppressed
-EventObjectTrigger = _ObjectTrigger
-EventObjectInternal = _ObjectInternal
-EventSource = _ObjectSource
+class EventSeverity(IntEnum):
+    NOT_CLASSIFIED = 0
+    INFORMATION = 1
+    WARNING = 2
+    AVERAGE = 3
+    HIGH = 4
+    DISASTER = 5
+
+
+class EventSuppressed(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class EventObjectTrigger(IntEnum):
+    TRIGGER = 0
+
+
+class EventObjectInternal(IntEnum):
+    TRIGGER = 0
+    ITEM = 4
+    LLD = 5
+
+
+class EventSource(IntEnum):
+    TRIGGER = 0
+    DISCOVERY = 1
+    AUTOREGISTRATION = 2
+    INTERNAL = 3
 
 
 class EventObjectDiscovery(IntEnum):

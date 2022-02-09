@@ -1,11 +1,9 @@
 from enum import IntEnum
-from . import _PrototypeDiscover
+from .item import ItemStatus
+
+class ItemPrototypeDiscover(IntEnum):
+    DISCOVER = 0
+    DONT_DISCOVER = 1
 
 
-ItemPrototypeDiscover = _PrototypeDiscover
-
-
-class ItemPrototypeStatus(IntEnum):
-    ENABLED = 0
-    DISABLED = 1
-    UNSUPPORTED = 3
+ItemPrototypeStatus = ItemStatus

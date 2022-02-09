@@ -1,10 +1,23 @@
 from enum import IntEnum
-from . import _DiscoveryFlag, _EntityStatus, _Priority
 
 
-TriggerFlag = _DiscoveryFlag
-TriggerStatus = _EntityStatus
-TriggerPriority = _Priority
+class TriggerFlag(IntEnum):
+    PLAIN = 0
+    DISCOVERED = 4
+
+
+class TriggerStatus(IntEnum):
+    ENABLED = 0
+    DISABLED = 1
+
+
+class TriggerPriority(IntEnum):
+    NOT_CLASSIFIED = 0
+    INFORMATION = 1
+    WARNING = 2
+    AVERAGE = 3
+    HIGH = 4
+    DISASTER = 5
 
 
 class TriggerState(IntEnum):

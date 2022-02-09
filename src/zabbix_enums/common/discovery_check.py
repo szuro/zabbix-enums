@@ -1,8 +1,9 @@
 from enum import IntEnum
-from . import _NoYes
 
 
-DiscoveryCheckUniq = _NoYes
+class DiscoveryCheckUniq(IntEnum):
+    NO = 0
+    YES = 1
 
 
 class DiscoveryCheckType(IntEnum):

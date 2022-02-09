@@ -1,24 +1,71 @@
 from enum import IntEnum
-from . import _EntityStatus, _NoYes, _YesNo, _Priority
-from .item import ItemAuthTypeSSH
-from .item_http import *
-from .item_preprocessing import PreprocessingErrorHandler
-from .host import HostInventoryMode
 
 
-LLDStatus = _EntityStatus
-LLDRuleAllowTraps = ItemAllowTraps
-LLDRuleAuthTypeHTTP = ItemAuthTypeHTTP
-LLDRuleAuthTypeSSH = ItemAuthTypeSSH
-LLDRuleFollowRedirects = ItemFollowRedirects
-LLDRuleOutputFormat = ItemOutputFormat
-LLDRulePostType = ItemPostType
-LLDRuleRequestMethod = ItemRequestMethod
-LLDRuleRetrieveMode = ItemRetrieveMode
-LLDRuleStatus = _EntityStatus
-LLDRuleVerifyHost = ItemVerifyHost
-LLDRuleVerifyPeer = ItemVerifyPeer
+class LLDStatus(IntEnum):
+    ENABLED = 0
+    DISABLED = 1
 
+
+class LLDRuleAllowTraps(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class LLDRuleAuthTypeHTTP(IntEnum):
+    NONE = 0
+    BASIC = 1
+    NTLM = 2
+    KERBEROS = 3
+
+
+class LLDRuleAuthTypeSSH(IntEnum):
+    PASSWORD = 0
+    PUBLIC_KEY = 1
+
+
+class LLDRuleFollowRedirects(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class LLDRuleOutputFormat(IntEnum):
+    RAW = 0
+    JSON = 1
+
+
+class LLDRulePostType(IntEnum):
+    RAW = 0
+    JSON = 2
+    XML = 3
+
+
+class LLDRuleRequestMethod(IntEnum):
+    GET = 0
+    POST = 1
+    PUT = 2
+    HEAD  = 3
+
+
+class LLDRuleRetrieveMode(IntEnum):
+    BODY = 0
+    HEADERS = 1
+    BODY_AND_HEADERS = 2
+    BOTH = 2
+
+
+class LLDRuleStatus(IntEnum):
+    ENABLED = 0
+    DISABLED = 1
+
+
+class LLDRuleVerifyHost(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class LLDRuleVerifyPeer(IntEnum):
+    NO = 0
+    YES = 1
 
 
 class LLDRuleEvalType(IntEnum):
@@ -28,12 +75,43 @@ class LLDRuleEvalType(IntEnum):
     CUSTOM = 3
 
 
-LLDRulePreprocessingErrorHandler = PreprocessingErrorHandler
-LLDRuleOverridesStop = _NoYes
-LLDRuleOverrideEvalType = LLDRuleEvalType
-LLDRuleOverrideOperationDiscover = _YesNo
-LLDRuleOverrideOperationSeverity = _Priority
-LLDRuleOverrideOperationInventory = HostInventoryMode
+class LLDRulePreprocessingErrorHandler(IntEnum):
+    ERROR_MESSAGE = 0
+    DISCARD_VALUE = 1
+    CUSTOM_VALUE = 2
+    CUSTOM_ERROR_MESSAGE = 3
+
+
+class LLDRuleOverridesStop(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class LLDRuleOverrideEvalType(IntEnum):
+    AND_OR = 0
+    AND = 1
+    OR = 2
+    CUSTOM = 3
+
+
+class LLDRuleOverrideOperationDiscover(IntEnum):
+    YES = 0
+    NO = 1
+
+
+class LLDRuleOverrideOperationSeverity(IntEnum):
+    NOT_CLASSIFIED = 0
+    INFORMATION = 1
+    WARNING = 2
+    AVERAGE = 3
+    HIGH = 4
+    DISASTER = 5
+
+
+class LLDRuleOverrideOperationInventory(IntEnum):
+    DISABLED = -1
+    MANUAL = 0
+    AUTOMATIC = 1
 
 
 class LLDRuleOverrideOperationObject(IntEnum):

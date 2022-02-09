@@ -1,5 +1,11 @@
-from . import _DiscoveryFlag, _NoYes
+from enum import IntEnum
 
 
-HostGroupFlag = _DiscoveryFlag
-HostGroupInternal = _NoYes
+class HostGroupFlag(IntEnum):
+    PLAIN = 0
+    DISCOVERED = 4
+
+
+class HostGroupInternal(IntEnum):
+    NO = 0
+    YES = 1

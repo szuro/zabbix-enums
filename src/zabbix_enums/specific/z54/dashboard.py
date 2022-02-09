@@ -1,8 +1,9 @@
-from enum import Enum
-from zabbix_enums.common import _NoYes
+from enum import Enum, IntEnum
 
 
-DashboardStartSlideshow = _NoYes
+class DashboardStartSlideshow(IntEnum):
+    NO = 0
+    YES = 1
 
 
 class DashboardWidgetType(str, Enum):

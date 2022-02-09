@@ -1,13 +1,36 @@
 from enum import IntEnum
-from . import _NoYes, _EntityStatus, _ObjectSource
 
 
-MediaTypeSMTPSVerifyHost = _NoYes
-MediaTypeSMTPSVerifyPeer = _NoYes
-MediaTypeStatus = _EntityStatus
-MediaTypeProcessTags = _NoYes
-MediaTypeShowEventMenu = _NoYes
-MediaTypeEventSource = _ObjectSource
+class MediaTypeSMTPSVerifyHost(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class MediaTypeSMTPSVerifyPeer(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class MediaTypeStatus(IntEnum):
+    ENABLED = 0
+    DISABLED = 1
+
+
+class MediaTypeProcessTags(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class MediaTypeShowEventMenu(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class MediaTypeEventSource(IntEnum):
+    TRIGGER = 0
+    DISCOVERY = 1
+    AUTOREGISTRATION = 2
+    INTERNAL = 3
 
 
 class MediaType(IntEnum):

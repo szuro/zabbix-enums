@@ -1,9 +1,14 @@
 from enum import IntEnum
-from . import _DiscoveryFlag, _EntityStatus
 
 
-ItemFlag = _DiscoveryFlag
-ItemStatus = _EntityStatus
+class ItemFlag(IntEnum):
+    PLAIN = 0
+    DISCOVERED = 4
+
+
+class ItemStatus(IntEnum):
+    ENABLED = 0
+    DISABLED = 1
 
 
 class ItemValueType(IntEnum):

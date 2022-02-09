@@ -1,12 +1,29 @@
 from enum import IntEnum
-from . import _DiscoveryFlag, _NoYes
 
 
-GraphFlag = _DiscoveryFlag
-GraphShow3d = _NoYes
-GraphShowLegend = _NoYes
-GraphShowWorkPeriod = _NoYes
-GraphShowTriggers = _NoYes
+class GraphFlag(IntEnum):
+    PLAIN = 0
+    DISCOVERED = 4
+
+
+class GraphShow3d(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class GraphShowLegend(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class GraphShowWorkPeriod(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class GraphShowTriggers(IntEnum):
+    NO = 0
+    YES = 1
 
 
 class GraphType(IntEnum):
@@ -21,4 +38,8 @@ class GraphYmaxType(IntEnum):
     FIXED = 1
     ITEMS = 2
 
-GraphYminType = GraphYmaxType
+
+class GraphYminType(IntEnum):
+    CALCULATED = 0
+    FIXED = 1
+    ITEMS = 2

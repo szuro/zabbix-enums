@@ -1,13 +1,34 @@
 from enum import IntEnum
-from . import _NoYes
 
 
-MapExpandMacro = _NoYes
-MapExpandProblem = _NoYes
-MapGridAlignEnable = _NoYes
-MapGridShow = _NoYes
-MapHighlightEnable = _NoYes
-MapMarkElements = _NoYes
+class MapExpandMacro(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class MapExpandProblem(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class MapGridAlignEnable(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class MapGridShow(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class MapHighlightEnable(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class MapMarkElements(IntEnum):
+    NO = 0
+    YES = 1
 
 
 class MapLabelType(IntEnum):

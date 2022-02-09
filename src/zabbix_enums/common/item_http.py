@@ -1,11 +1,24 @@
 from enum import IntEnum
-from . import _NoYes
 
 
-ItemAllowTraps = _NoYes
-ItemFollowRedirects = _NoYes
-ItemVerifyHost = _NoYes
-ItemVerifyPeer = _NoYes
+class ItemAllowTraps(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class ItemFollowRedirects(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class ItemVerifyHost(IntEnum):
+    NO = 0
+    YES = 1
+
+
+class ItemVerifyPeer(IntEnum):
+    NO = 0
+    YES = 1
 
 
 class ItemAuthTypeHTTP(IntEnum):

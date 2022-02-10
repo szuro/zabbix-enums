@@ -1,7 +1,8 @@
-from enum import Enum, IntEnum
+from enum import Enum
+from zabbix_enums.common import _ZabbixEnum
 
 
-class DashboardStartSlideshow(IntEnum):
+class DashboardStartSlideshow(_ZabbixEnum):
     NO = 0
     YES = 1
 

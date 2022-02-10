@@ -1,7 +1,7 @@
-from enum import IntEnum
+from zabbix_enums.common import _ZabbixEnum
 
 
-class AuditLogAction(IntEnum):
+class AuditLogAction(_ZabbixEnum):
     ADD = 0
     UPDATE = 1
     DELETE = 2

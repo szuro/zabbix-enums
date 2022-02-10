@@ -1,37 +1,37 @@
-from enum import IntEnum
+from zabbix_enums.common import _ZabbixEnum
 
 
-class MapExpandMacro(IntEnum):
+class MapExpandMacro(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class MapExpandProblem(IntEnum):
+class MapExpandProblem(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class MapGridAlignEnable(IntEnum):
+class MapGridAlignEnable(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class MapGridShow(IntEnum):
+class MapGridShow(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class MapHighlightEnable(IntEnum):
+class MapHighlightEnable(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class MapMarkElements(IntEnum):
+class MapMarkElements(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class MapLabelType(IntEnum):
+class MapLabelType(_ZabbixEnum):
     LABEL = 0
     IP_ADDRESS = 1
     ELEMENT_NAME = 2
@@ -39,7 +39,7 @@ class MapLabelType(IntEnum):
     NOTHING = 4
 
 
-class MapLabelTypeHost(IntEnum):
+class MapLabelTypeHost(_ZabbixEnum):
     LABEL = 0
     IP_ADDRESS = 1
     ELEMENT_NAME = 2
@@ -48,7 +48,7 @@ class MapLabelTypeHost(IntEnum):
     CUSTOM = 5
 
 
-class MapLabelTypeHostGroup(IntEnum):
+class MapLabelTypeHostGroup(_ZabbixEnum):
     LABEL = 0
     ELEMENT_NAME = 2
     STATUS = 3
@@ -56,14 +56,14 @@ class MapLabelTypeHostGroup(IntEnum):
     CUSTOM = 5
 
 
-class MapLabelTypeImage(IntEnum):
+class MapLabelTypeImage(_ZabbixEnum):
     LABEL = 0
     ELEMENT_NAME = 2
     NOTHING = 4
     CUSTOM = 5
 
 
-class MapLabelTypeMap(IntEnum):
+class MapLabelTypeMap(_ZabbixEnum):
     LABEL = 0
     ELEMENT_NAME = 2
     STATUS = 3
@@ -71,7 +71,7 @@ class MapLabelTypeMap(IntEnum):
     CUSTOM = 5
 
 
-class MapLabelTypeTrigger(IntEnum):
+class MapLabelTypeTrigger(_ZabbixEnum):
     LABEL = 0
     ELEMENT_NAME = 2
     STATUS = 3

@@ -1,17 +1,17 @@
-from enum import IntEnum
+from zabbix_enums.common import _ZabbixEnum
 
 
-class HostInterfaceMain(IntEnum):
+class HostInterfaceMain(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class HostIntrefaceUseIP(IntEnum):
+class HostIntrefaceUseIP(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class HostInterfaceType(IntEnum):
+class HostInterfaceType(_ZabbixEnum):
     AGENT = 1
     SNMP = 2
     IPMI = 3

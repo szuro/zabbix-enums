@@ -1,6 +1,6 @@
-from enum import IntEnum
+from zabbix_enums.common import _ZabbixEnum
 
 
-class MacroType(IntEnum):
+class MacroType(_ZabbixEnum):
     TEXT = 0
     SECRET = 1

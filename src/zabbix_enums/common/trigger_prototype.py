@@ -1,7 +1,8 @@
+from zabbix_enums.common import _ZabbixEnum
 from .trigger import *
 
 
-class TriggerPrototypeFlag(IntEnum):
+class TriggerPrototypeFlag(_ZabbixEnum):
     PLAIN = 0
     DISCOVERED = 4
 

@@ -22,5 +22,37 @@ unknown_triggers = zapi.trigger.get(filter={'state': TriggerState.UNKNOWN})
 
 ```
 
+Another use case is checking entity state:
+
+```python
+from zabbix_enums.z54 import HostStatus
+from pyzabbix import ZabbixAPI
+
+
+zapi = ZabbixAPI('http://localhost')
+zapi.login('Admin', 'zabbix')
+
+hosts = zapi.host.get()
+
+monitored = [host for host in hosts if HostStatus(host['status']) is HostStatus.MONITORED]
+
+```
+
+For some cases mathematical operations might be appropriate:
+
+```python
+from zabbix_enums.z54 import ProblemSeverity
+from pyzabbix import ZabbixAPI
+
+
+zapi = ZabbixAPI('http://localhost')
+zapi.login('Admin', 'zabbix')
+
+problems = zapi.problem.get()
+
+important = [problem for problem in problems if ProblemSeverity(problem['severity']) > ProblemSeverity.AVERAGE]
+
+```
+
 # Limitations
 Please bare in mind that not all enumerations are present at this time.

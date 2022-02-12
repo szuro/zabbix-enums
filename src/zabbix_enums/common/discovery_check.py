@@ -1,12 +1,12 @@
-from enum import IntEnum
+from zabbix_enums.common import _ZabbixEnum
 
 
-class DiscoveryCheckUniq(IntEnum):
+class DiscoveryCheckUniq(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class DiscoveryCheckType(IntEnum):
+class DiscoveryCheckType(_ZabbixEnum):
     SSH = 0
     LDAP = 1
     SMTP = 2
@@ -25,13 +25,13 @@ class DiscoveryCheckType(IntEnum):
     TELNET = 15
 
 
-class DiscoveryCheckHostSource(IntEnum):
+class DiscoveryCheckHostSource(_ZabbixEnum):
     DNS = 1
     IP = 2
     CHECK_VALUE = 3
 
 
-class DiscoveryCheckNameSource(IntEnum):
+class DiscoveryCheckNameSource(_ZabbixEnum):
     NOT_SCPECIFIED = 0
     DNS = 1
     IP = 2

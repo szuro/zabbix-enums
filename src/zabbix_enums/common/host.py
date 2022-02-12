@@ -1,29 +1,29 @@
-from enum import IntEnum
+from zabbix_enums.common import _ZabbixEnum
 
 
-class HostFlag(IntEnum):
+class HostFlag(_ZabbixEnum):
     PLAIN = 0
     DISCOVERED = 4
 
 
 
-class HostInventoryMode(IntEnum):
+class HostInventoryMode(_ZabbixEnum):
     DISABLED = -1
     MANUAL = 0
     AUTOMATIC = 1
 
 
-class HostStatus(IntEnum):
+class HostStatus(_ZabbixEnum):
     MONITORED = 0
     UNMONITORED = 1
 
 
-class HostMaintenanceStatus(IntEnum):
+class HostMaintenanceStatus(_ZabbixEnum):
     NO_MAINTENANCE = 0
     IN_MAINTENANCE = 1
 
 
-class HostInventoryProperty(IntEnum):
+class HostInventoryProperty(_ZabbixEnum):
     ALIAS = 4
     ASSET_TAG = 11
     CHASSIS = 28

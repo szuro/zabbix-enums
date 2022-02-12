@@ -1,62 +1,62 @@
-from enum import IntEnum
+from zabbix_enums.common import _ZabbixEnum
 
 
-class MediaTypeSMTPSVerifyHost(IntEnum):
+class MediaTypeSMTPSVerifyHost(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class MediaTypeSMTPSVerifyPeer(IntEnum):
+class MediaTypeSMTPSVerifyPeer(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class MediaTypeStatus(IntEnum):
+class MediaTypeStatus(_ZabbixEnum):
     ENABLED = 0
     DISABLED = 1
 
 
-class MediaTypeProcessTags(IntEnum):
+class MediaTypeProcessTags(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class MediaTypeShowEventMenu(IntEnum):
+class MediaTypeShowEventMenu(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class MediaTypeEventSource(IntEnum):
+class MediaTypeEventSource(_ZabbixEnum):
     TRIGGER = 0
     DISCOVERY = 1
     AUTOREGISTRATION = 2
     INTERNAL = 3
 
 
-class MediaType(IntEnum):
+class MediaType(_ZabbixEnum):
     EMAIL = 0
     SCRIPT = 1
     SMS = 2
     WEBHOOK = 4
 
 
-class MediaTypeSMTPSecurity(IntEnum):
+class MediaTypeSMTPSecurity(_ZabbixEnum):
     NONE = 0
     STARTTLS = 1
     SSL_TLS = 2
 
 
-class MediaTypeSMTPAuthentication(IntEnum):
+class MediaTypeSMTPAuthentication(_ZabbixEnum):
     NONE = 0
     PASSWORD = 1
 
 
-class MediaTypeContentType(IntEnum):
+class MediaTypeContentType(_ZabbixEnum):
     PLAIN_TEXT = 0
     HTML = 1
 
 
-class MediaTypeRecovery(IntEnum):
+class MediaTypeRecovery(_ZabbixEnum):
     OPERATIONS = 0
     RECOVERY = 1
     RECOVERY_OPERATIONS = 1

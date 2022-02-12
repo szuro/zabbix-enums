@@ -1,7 +1,7 @@
-from enum import IntEnum
+from zabbix_enums.common import _ZabbixEnum
 
 
-class ProblemSeverity(IntEnum):
+class ProblemSeverity(_ZabbixEnum):
     NOT_CLASSIFIED = 0
     INFORMATION = 1
     WARNING = 2
@@ -10,26 +10,26 @@ class ProblemSeverity(IntEnum):
     DISASTER = 5
 
 
-class ProblemSuppressed(IntEnum):
+class ProblemSuppressed(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class ProblemObjectTrigger(IntEnum):
+class ProblemObjectTrigger(_ZabbixEnum):
     TRIGGER = 0
 
 
-class ProblemObjectInternal(IntEnum):
+class ProblemObjectInternal(_ZabbixEnum):
     TRIGGER = 0
     ITEM = 4
     LLD = 5
 
 
-class ProblemAcknowledged(IntEnum):
+class ProblemAcknowledged(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class ProblemSource(IntEnum):
+class ProblemSource(_ZabbixEnum):
     TRIGGER = 0
     INTERNAL = 3

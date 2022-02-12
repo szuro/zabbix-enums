@@ -1,3 +1,4 @@
+from zabbix_enums.common import _ZabbixEnum
 from .graph import *
 
 
@@ -10,6 +11,6 @@ GraphPrototypeYmaxType = GraphYmaxType
 GraphPrototypeYminType = GraphYminType
 
 
-class GrapPrototypeDiscover(IntEnum):
+class GrapPrototypeDiscover(_ZabbixEnum):
     DISCOVER = 0
     DONT_DISCOVER = 1

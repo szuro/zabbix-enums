@@ -1,105 +1,105 @@
-from enum import IntEnum
+from zabbix_enums.common import _ZabbixEnum
 
 
-class LLDStatus(IntEnum):
+class LLDStatus(_ZabbixEnum):
     ENABLED = 0
     DISABLED = 1
 
 
-class LLDRuleAllowTraps(IntEnum):
+class LLDRuleAllowTraps(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class LLDRuleAuthTypeHTTP(IntEnum):
+class LLDRuleAuthTypeHTTP(_ZabbixEnum):
     NONE = 0
     BASIC = 1
     NTLM = 2
     KERBEROS = 3
 
 
-class LLDRuleAuthTypeSSH(IntEnum):
+class LLDRuleAuthTypeSSH(_ZabbixEnum):
     PASSWORD = 0
     PUBLIC_KEY = 1
 
 
-class LLDRuleFollowRedirects(IntEnum):
+class LLDRuleFollowRedirects(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class LLDRuleOutputFormat(IntEnum):
+class LLDRuleOutputFormat(_ZabbixEnum):
     RAW = 0
     JSON = 1
 
 
-class LLDRulePostType(IntEnum):
+class LLDRulePostType(_ZabbixEnum):
     RAW = 0
     JSON = 2
     XML = 3
 
 
-class LLDRuleRequestMethod(IntEnum):
+class LLDRuleRequestMethod(_ZabbixEnum):
     GET = 0
     POST = 1
     PUT = 2
     HEAD  = 3
 
 
-class LLDRuleRetrieveMode(IntEnum):
+class LLDRuleRetrieveMode(_ZabbixEnum):
     BODY = 0
     HEADERS = 1
     BODY_AND_HEADERS = 2
     BOTH = 2
 
 
-class LLDRuleStatus(IntEnum):
+class LLDRuleStatus(_ZabbixEnum):
     ENABLED = 0
     DISABLED = 1
 
 
-class LLDRuleVerifyHost(IntEnum):
+class LLDRuleVerifyHost(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class LLDRuleVerifyPeer(IntEnum):
+class LLDRuleVerifyPeer(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class LLDRuleEvalType(IntEnum):
+class LLDRuleEvalType(_ZabbixEnum):
     AND_OR = 0
     AND = 1
     OR = 2
     CUSTOM = 3
 
 
-class LLDRulePreprocessingErrorHandler(IntEnum):
+class LLDRulePreprocessingErrorHandler(_ZabbixEnum):
     ERROR_MESSAGE = 0
     DISCARD_VALUE = 1
     CUSTOM_VALUE = 2
     CUSTOM_ERROR_MESSAGE = 3
 
 
-class LLDRuleOverridesStop(IntEnum):
+class LLDRuleOverridesStop(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class LLDRuleOverrideEvalType(IntEnum):
+class LLDRuleOverrideEvalType(_ZabbixEnum):
     AND_OR = 0
     AND = 1
     OR = 2
     CUSTOM = 3
 
 
-class LLDRuleOverrideOperationDiscover(IntEnum):
+class LLDRuleOverrideOperationDiscover(_ZabbixEnum):
     YES = 0
     NO = 1
 
 
-class LLDRuleOverrideOperationSeverity(IntEnum):
+class LLDRuleOverrideOperationSeverity(_ZabbixEnum):
     NOT_CLASSIFIED = 0
     INFORMATION = 1
     WARNING = 2
@@ -108,20 +108,20 @@ class LLDRuleOverrideOperationSeverity(IntEnum):
     DISASTER = 5
 
 
-class LLDRuleOverrideOperationInventory(IntEnum):
+class LLDRuleOverrideOperationInventory(_ZabbixEnum):
     DISABLED = -1
     MANUAL = 0
     AUTOMATIC = 1
 
 
-class LLDRuleOverrideOperationObject(IntEnum):
+class LLDRuleOverrideOperationObject(_ZabbixEnum):
     ITEM = 0
     TRIGGER = 1
     GRAPH = 2
     HOST = 3
 
 
-class LLDRuleOverrideOperationOperator(IntEnum):
+class LLDRuleOverrideOperationOperator(_ZabbixEnum):
     EQUALS = 0
     DOES_NOT_EQUAL = 1
     CONTAINS = 2
@@ -130,6 +130,6 @@ class LLDRuleOverrideOperationOperator(IntEnum):
     DOES_NOT_MATCH = 9
 
 
-class LLDRuleOverrideOperationStatus(IntEnum):
+class LLDRuleOverrideOperationStatus(_ZabbixEnum):
     CREATE_ENABLED = 0
     CREATE_DISABLED = 1

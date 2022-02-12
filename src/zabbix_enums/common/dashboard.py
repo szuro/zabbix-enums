@@ -1,27 +1,27 @@
-from enum import IntEnum
+from zabbix_enums.common import _ZabbixEnum
 
 
-class DashboardPrivate(IntEnum):
+class DashboardPrivate(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class DashboardUserGroupPermission(IntEnum):
+class DashboardUserGroupPermission(_ZabbixEnum):
     READ_ONLY = 2
     READ_WRITE = 3
 
 
-class DashboardUserPermission(IntEnum):
+class DashboardUserPermission(_ZabbixEnum):
     READ_ONLY = 2
     READ_WRITE = 3
 
 
-class DashboardWidgetHeaderHidden(IntEnum):
+class DashboardWidgetHeaderHidden(_ZabbixEnum):
     NO = 0
     YES = 1
 
 
-class DashboardWidgetField(IntEnum):
+class DashboardWidgetField(_ZabbixEnum):
     INTEGER = 0
     STRING = 1
     HOST_GROUP = 2

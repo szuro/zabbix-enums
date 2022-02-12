@@ -1,7 +1,7 @@
-from enum import IntEnum
+from zabbix_enums.common import _ZabbixEnum
 
 
-class LLDRuleType(IntEnum):
+class LLDRuleType(_ZabbixEnum):
     ZABBIX_AGENT = 0
     ZABBIX_TRAPPER = 2
     SIMPLE_CHECK = 3
@@ -20,14 +20,14 @@ class LLDRuleType(IntEnum):
     SCRIPT = 21
 
 
-class LLDRuleFilterOperator(IntEnum):
+class LLDRuleFilterOperator(_ZabbixEnum):
     MATCHES = 8
     DOES_NOT_MATCH = 9
     EXISTS = 12
     DOES_NOT_EXIST = 13
 
 
-class LLDRulePreprocessing(IntEnum):
+class LLDRulePreprocessing(_ZabbixEnum):
     REGULAR_EXPRESSION = 5
     XML_XPATH = 11
     JSONPATH = 12

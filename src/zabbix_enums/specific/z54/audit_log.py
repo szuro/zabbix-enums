@@ -1,7 +1,7 @@
-from enum import IntEnum
+from zabbix_enums.common import _ZabbixEnum
 
 
-class AuditLogResourceType(IntEnum):
+class AuditLogResourceType(_ZabbixEnum):
     USER = 0
     CONFIGURATION_OF_ZABBIX = 2
     MEDIA_TYPE = 3

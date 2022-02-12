@@ -1,16 +1,16 @@
-from enum import IntEnum
+from zabbix_enums.common import _ZabbixEnum
 
 
-class ProxyStatus(IntEnum):
+class ProxyStatus(_ZabbixEnum):
     ACTIVE = 5
     PASSIVE = 6
 
 
-class ProxyType(IntEnum):
+class ProxyType(_ZabbixEnum):
     ACTIVE = 5
     PASSIVE = 6
 
 
-class ProxyUseIp(IntEnum):
+class ProxyUseIp(_ZabbixEnum):
     NO = 0
     YES = 1

@@ -1,7 +1,29 @@
-from zabbix_enums.common import _ZabbixEnum
+"""https://www.zabbix.com/documentation/5.4/en/manual/api/reference/auditlog/object"""
+from zabbix_enums import _ZabbixEnum
+
+
+class AuditLogAction(_ZabbixEnum):
+    """
+    https://www.zabbix.com/documentation/5.4/en/manual/api/reference/auditlog/object#audit-log
+
+    Audit log entry action.
+    """
+    ADD = 0
+    UPDATE = 1
+    DELETE = 2
+    LOGIN = 3
+    LOGOUT = 4
+    ENABLE = 5
+    DISABLE = 6
+    EXECUTE = 7
 
 
 class AuditLogResourceType(_ZabbixEnum):
+    """
+    https://www.zabbix.com/documentation/5.4/en/manual/api/reference/auditlog/object#audit-log
+
+    Audit log entry resource type.
+    """
     USER = 0
     CONFIGURATION_OF_ZABBIX = 2
     MEDIA_TYPE = 3
@@ -41,4 +63,3 @@ class AuditLogResourceType(_ZabbixEnum):
     USER_ROLE = 44
     AUTH_TOKEN = 45
     SCHEDULED_REPORT = 46
-

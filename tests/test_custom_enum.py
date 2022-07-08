@@ -1,5 +1,5 @@
 from unittest import TestCase
-from zabbix_enums.common import _ZabbixEnum
+from zabbix_enums import _ZabbixEnum
 
 
 class TestEnum(_ZabbixEnum):

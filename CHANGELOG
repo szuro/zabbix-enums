@@ -1,0 +1,15 @@
+# Changelog
+
+## [1.5.4] - 2022-07-08
+### Added
+- Full set of enumerations for 5.2.
+- Many missing enumerations for 5.0 and 5.4.
+- URLs to related API objects in Zabbix documentation.
+- Short descriptions of enums.
+
+### Removed
+- `common` namespace - it should be not longer be used.
+- `specific` namespaces - they should be not longer be used.
+  
+### Changed
+- The `is` operator can no longed be used to compare enumerations. This is the result of removing the `common` namespace.

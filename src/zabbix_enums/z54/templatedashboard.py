@@ -29,7 +29,7 @@ class TemplateDashboardWidgetType(str, Enum):
     URL = "url"
 
 
-class DashboardWidgetViewMode(_ZabbixEnum):
+class TemplateDashboardWidgetViewMode(_ZabbixEnum):
     """
     https://www.zabbix.com/documentation/5.4/en/manual/api/reference/templatedashboard/object#template-dashboard-widget
 
@@ -39,7 +39,7 @@ class DashboardWidgetViewMode(_ZabbixEnum):
     HIDDEN_HEADER = 1
 
 
-class DashboardWidgetField(_ZabbixEnum):
+class TemplateDashboardWidgetFieldType(_ZabbixEnum):
     """
     https://www.zabbix.com/documentation/5.4/en/manual/api/reference/templatedashboard/object#template-dashboard-widget
 

@@ -8,10 +8,10 @@ class TestEnum(_ZabbixEnum):
 
 class TestZEnum(TestCase):
     def test_str(self):
-        self.assertTrue(TestEnum('0') is TestEnum.VAL)
+        self.assertTrue(TestEnum('0') == TestEnum.VAL)
 
     def test_int(self):
-        self.assertTrue(TestEnum(0) is TestEnum.VAL)
+        self.assertTrue(TestEnum(0) == TestEnum.VAL)
 
     def test_notfound_str(self):
         with self.assertRaisesRegex(ValueError, '1 is not a valid TestEnum'):

@@ -22,11 +22,11 @@ class ActionPauseSupressed(_ZabbixEnum):
     YES = 1
 
 
-class ActionPauseNotifyIfCanceled(_ZabbixEnum):
+class ActionNotifyIfCanceled(_ZabbixEnum):
     """
     https://www.zabbix.com/documentation/6.0/en/manual/api/reference/action/object#action
 
-    + Whether to notify when escalation is canceled.
+    Whether to notify when escalation is canceled.
     """
     NO = 0
     YES = 1

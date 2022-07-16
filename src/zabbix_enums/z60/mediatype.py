@@ -106,6 +106,7 @@ class MessageTemplateEventSource(_ZabbixEnum):
     DISCOVERY = 1
     AUTOREGISTRATION = 2
     INTERNAL = 3
+    SERVICES = 4
 
 
 class MessageTemplateRecovery(_ZabbixEnum):

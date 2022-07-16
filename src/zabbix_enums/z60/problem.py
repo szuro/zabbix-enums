@@ -10,6 +10,7 @@ class ProblemSource(_ZabbixEnum):
     """
     TRIGGER = 0
     INTERNAL = 3
+    SERVICE = 4
 
 
 class ProblemObjectTrigger(_ZabbixEnum):
@@ -32,6 +33,16 @@ class ProblemObjectInternal(_ZabbixEnum):
     TRIGGER = 0
     ITEM = 4
     LLD = 5
+
+
+class ProblemObjectService(_ZabbixEnum):
+    """
+    https://www.zabbix.com/documentation/6.0/en/manual/api/reference/problem/object#problem-object
+
+    Type of object that is related to the problem event.
+    Possible values for service events.
+    """
+    SERCIVE = 6
 
 
 class ProblemAcknowledged(_ZabbixEnum):

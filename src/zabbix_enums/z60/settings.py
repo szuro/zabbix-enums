@@ -111,3 +111,12 @@ class SettingsIframeSandboxingEnabled(_ZabbixEnum):
     """
     NO = 0
     YES = 1
+
+class SettingsAuditlogEnabled(_ZabbixEnum):
+    """
+    https://www.zabbix.com/documentation/6.0/en/manual/api/reference/settings/object#settings
+
+    Enable audit logging.
+    """
+    NO = 0
+    YES = 1

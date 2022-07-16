@@ -12,6 +12,7 @@ class EventSource(_ZabbixEnum):
     DISCOVERY = 1
     AUTOREGISTRATION = 2
     INTERNAL = 3
+    SERVICE = 4
 
 
 class EventObjectTrigger(_ZabbixEnum):
@@ -56,12 +57,32 @@ class EventObjectInternal(_ZabbixEnum):
     LLD = 5
 
 
+class EventObjectInternal(_ZabbixEnum):
+    """
+    https://www.zabbix.com/documentation/6.0/en/manual/api/reference/event/object#event
+
+    Possible values for service events.
+    """
+    SERVICE = 6
+
+
 class EventValueTrigger(_ZabbixEnum):
     """
     https://www.zabbix.com/documentation/6.0/en/manual/api/reference/event/object#event
 
     State of the related object.
     Possible values for trigger events.
+    """
+    OK = 0
+    PROBLEM = 1
+
+
+class EventValueService(_ZabbixEnum):
+    """
+    https://www.zabbix.com/documentation/6.0/en/manual/api/reference/event/object#event
+
+    State of the related object.
+    Possible values for service events.
     """
     OK = 0
     PROBLEM = 1

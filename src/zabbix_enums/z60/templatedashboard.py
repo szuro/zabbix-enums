@@ -25,6 +25,7 @@ class TemplateDashboardWidgetType(str, Enum):
     CLOCK = "clock"
     GRAPH_CLASSIC = "graph"
     GRAPH_PROTOTYPE = "graphprototype"
+    ITEM = "item"
     PLAIN_TEXT = "plaintext"
     URL = "url"
 

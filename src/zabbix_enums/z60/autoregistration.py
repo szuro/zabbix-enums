@@ -9,5 +9,6 @@ class AutoregistrationTLSAccept(_ZabbixEnum):
     Type of allowed incoming connections for autoregistration.
     """
     INSECURE = 1
+    UNSECURE = 1
     PSK = 2
     BOTH = 3

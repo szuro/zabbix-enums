@@ -11,11 +11,11 @@ class AuditLogAction(_ZabbixEnum):
     ADD = 0
     UPDATE = 1
     DELETE = 2
-    LOGIN = 3
     LOGOUT = 4
-    ENABLE = 5
-    DISABLE = 6
     EXECUTE = 7
+    LOGIN = 8
+    FAILED_LOGIN = 9
+    HISTORY_CLEAR = 10
 
 
 class AuditLogResourceType(_ZabbixEnum):
@@ -25,12 +25,10 @@ class AuditLogResourceType(_ZabbixEnum):
     Audit log entry resource type.
     """
     USER = 0
-    CONFIGURATION_OF_ZABBIX = 2
     MEDIA_TYPE = 3
     HOST = 4
     ACTION = 5
     GRAPH = 6
-    GRAPH_ELEMENT = 7
     USER_GROUP = 11
     TRIGGER = 13
     HOST_GROUP = 14
@@ -60,6 +58,9 @@ class AuditLogResourceType(_ZabbixEnum):
     HOUSEKEEPING = 41
     AUTHENTICATION = 42
     DASHBOARD_TEMPLATE = 43
+    TEMPLATE_DASHBOARD = 43
     USER_ROLE = 44
     AUTH_TOKEN = 45
     SCHEDULED_REPORT = 46
+    HIGH_AVAILABILITY_NODE = 47
+    SLA = 48

@@ -44,14 +44,17 @@ class DashboardWidgetType(str, Enum):
     GRAPH_CLASSIC = "graph"
     GRAPH_PROTOTYPE = "graphprototype"
     HOST_AVAILABILITY = "hostavail"
+    ITEM = "item"
     MAP = "map"
     MAP_NAVIGATION_TREE = "navtree"
     PLAIN_TEXT = "plaintext"
     PROBLEM_HOSTS = "problemhosts"
     PROBLEMS = "problems"
     PROBLEMS_BY_SEVERITY = "problemsbysv"
+    SLA_REPORT = "slareport"
     GRAPH = "svggraph"
     SYSTEM_INFORMATION = "systeminfo"
+    TOP_HOSTS = "tophosts"
     TRIGGER_OVERVIEW = "trigover"
     URL = "url"
     WEB_MONITORING = "web"
@@ -67,7 +70,7 @@ class DashboardWidgetViewMode(_ZabbixEnum):
     HIDDEN_HEADER = 1
 
 
-class DashboardWidgetField(_ZabbixEnum):
+class DashboardWidgetFieldType(_ZabbixEnum):
     """
     https://www.zabbix.com/documentation/6.0/en/manual/api/reference/dashboard/object#dashboard-widget-field
 
@@ -80,6 +83,8 @@ class DashboardWidgetField(_ZabbixEnum):
     ITEM = 4
     GRAPH = 6
     MAP = 8
+    SERVICE = 9
+    SLA = 10
 
 
 class DashboardUserGroupPermission(_ZabbixEnum):

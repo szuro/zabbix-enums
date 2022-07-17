@@ -48,7 +48,7 @@ class TimePeriodType(_ZabbixEnum):
     monthly = 4
 
 
-class ProblemTag(_ZabbixEnum):
+class ProblemTagOperator(_ZabbixEnum):
     """
     https://www.zabbix.com/documentation/5.4/en/manual/api/reference/maintenance/object#problem-tag
 

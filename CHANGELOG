@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.60.0] - 2022-07-17
+## Added
+- Added Zabbix version 6.0
+- Added enum form HA node object
+- Added enum for SLA object
+- Added enum for regexp object
+
+### Changed
+- Renamed enum: maintenance.ProblemTag is now maintenance.ProblemTagOperator
+- Unittests no longer use `is` for testing
+
 ## [1.5.4] - 2022-07-08
 ### Added
 - Full set of enumerations for 5.2.

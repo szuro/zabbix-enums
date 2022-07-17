@@ -1,10 +1,10 @@
-"""https://www.zabbix.com/documentation/5.2/en/manual/api/reference/maintenance/object"""
+"""https://www.zabbix.com/documentation/6.0/en/manual/api/reference/maintenance/object"""
 from zabbix_enums import _ZabbixEnum
 
 
 class MaintenanceType(_ZabbixEnum):
     """
-    https://www.zabbix.com/documentation/5.2/en/manual/api/reference/maintenance/object#maintenance
+    https://www.zabbix.com/documentation/6.0/en/manual/api/reference/maintenance/object#maintenance
 
     Type of maintenance.
     """
@@ -14,7 +14,7 @@ class MaintenanceType(_ZabbixEnum):
 
 class MaintenanceTagsEvalType(_ZabbixEnum):
     """
-    https://www.zabbix.com/documentation/5.2/en/manual/api/reference/maintenance/object#maintenance
+    https://www.zabbix.com/documentation/6.0/en/manual/api/reference/maintenance/object#maintenance
 
     Problem tag evaluation method.
     """
@@ -24,7 +24,7 @@ class MaintenanceTagsEvalType(_ZabbixEnum):
 
 class TimePeriodEvery(_ZabbixEnum):
     """
-    https://www.zabbix.com/documentation/5.2/en/manual/api/reference/maintenance/object#time-period
+    https://www.zabbix.com/documentation/6.0/en/manual/api/reference/maintenance/object#time-period
 
     For daily and weekly periods every defines day or week intervals at which the maintenance must come into effect.
     For monthly periods every defines the week of the month when the maintenance must come into effect.
@@ -38,7 +38,7 @@ class TimePeriodEvery(_ZabbixEnum):
 
 class TimePeriodType(_ZabbixEnum):
     """
-    https://www.zabbix.com/documentation/5.2/en/manual/api/reference/maintenance/object#time-period
+    https://www.zabbix.com/documentation/6.0/en/manual/api/reference/maintenance/object#time-period
 
     Type of time period.
     """
@@ -50,7 +50,7 @@ class TimePeriodType(_ZabbixEnum):
 
 class ProblemTagOperator(_ZabbixEnum):
     """
-    https://www.zabbix.com/documentation/5.2/en/manual/api/reference/maintenance/object#problem-tag
+    https://www.zabbix.com/documentation/6.0/en/manual/api/reference/maintenance/object#problem-tag
 
     Condition operator.
     """

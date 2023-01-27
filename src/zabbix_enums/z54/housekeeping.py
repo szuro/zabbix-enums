@@ -1,5 +1,4 @@
 """https://www.zabbix.com/documentation/5.4/en/manual/api/reference/housekeeping/object"""
-from tkinter import DISABLED
 from zabbix_enums import _ZabbixEnum
 
 

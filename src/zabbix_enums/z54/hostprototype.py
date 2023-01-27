@@ -1,5 +1,4 @@
 """https://www.zabbix.com/documentation/5.4/en/manual/api/reference/hostprototype/object"""
-from msilib.schema import Class
 from zabbix_enums import _ZabbixEnum
 
 

@@ -8,5 +8,5 @@ class UserDirectoryStartTLS(_ZabbixEnum):
     
     LDAP startTLS option. It cannot be used with ldaps:// protocol hosts.
     """
-    disabled = 0
-    enabled = 1
+    DISABLED = 0
+    ENABLED = 1

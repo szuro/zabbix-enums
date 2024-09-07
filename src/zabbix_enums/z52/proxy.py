@@ -23,7 +23,7 @@ class ProxyTLSConnect(_ZabbixEnum):
     CERTIFICATE = 4
 
 
-class HostTLSAccept(_ZabbixEnum):
+class ProxyTLSAccept(_ZabbixEnum):
     """
     https://www.zabbix.com/documentation/5.2/en/manual/api/reference/proxy/object#proxy
 

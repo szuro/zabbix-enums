@@ -1,6 +1,5 @@
 """https://www.zabbix.com/documentation/6.0/en/manual/api/reference/dashboard/object"""
 from enum import Enum
-from unittest.mock import DEFAULT
 from zabbix_enums import _ZabbixEnum
 
 

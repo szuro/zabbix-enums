@@ -40,9 +40,9 @@ class DashboardWidgetViewMode(_ZabbixEnum):
     HIDDEN_HEADER = 1
 
 
-class DashboardWidgetField(_ZabbixEnum):
+class DashboardWidgetFieldType(_ZabbixEnum):
     """
-    https://www.zabbix.com/documentation/6.0/en/manual/api/reference/templatedashboard/object#template-dashboard-widget
+    https://www.zabbix.com/documentation/6.0/en/manual/api/reference/templatedashboard/object#template-dashboard-widget-field
 
     Type of the widget field.
     """

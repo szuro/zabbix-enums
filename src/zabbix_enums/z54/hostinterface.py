@@ -36,7 +36,7 @@ class HostInterfaceType(_ZabbixEnum):
     JMX = 4
 
 
-class HostIntrefaceUseIP(_ZabbixEnum):
+class HostInterfaceUseIP(_ZabbixEnum):
     """
     https://www.zabbix.com/documentation/5.4/en/manual/api/reference/hostinterface/object#host-interface
 

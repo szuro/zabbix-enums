@@ -9,7 +9,11 @@ build-backend = "setuptools.build_meta"
 legacy_tox_ini = """
 [tox]
 isolated_build = True
-envlist = py39
+envlist = 
+    py39
+    py310
+    py311
+    py312
 
 [testenv]
 commands = python -m unittest discover

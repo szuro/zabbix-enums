@@ -91,7 +91,7 @@ class AuthenticationSAMLCaseSensitive(_ZabbixEnum):
     YES = 1
 
 
-class LDAPJitStatus(_ZabbixEnum):
+class AuthenticationLDAPJitStatus(_ZabbixEnum):
     """
     https://www.zabbix.com/documentation/6.4/en/manual/api/reference/authentication/object#authentication
 
@@ -101,7 +101,7 @@ class LDAPJitStatus(_ZabbixEnum):
     ENABLED = 1
 
 
-class SAMLJitStatus(_ZabbixEnum):
+class AuthenticationSAMLJitStatus(_ZabbixEnum):
     """
     https://www.zabbix.com/documentation/6.4/en/manual/api/reference/authentication/object#authentication
 

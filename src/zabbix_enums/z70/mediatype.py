@@ -65,6 +65,17 @@ class MediaTypeStatus(_ZabbixEnum):
     DISABLED = 1
 
 
+class MediaTypeContentType(_ZabbixEnum):
+    """
+    https://www.zabbix.com/documentation/7.0/en/manual/api/reference/mediatype/object#media-type
+
+    This parameter is deprecated, please use message_format instead.
+    Message format.
+    """
+    PLAIN_TEXT = 0
+    HTML = 1
+
+
 class MediaTypeMessageFormat(_ZabbixEnum):
     """
     https://www.zabbix.com/documentation/7.0/en/manual/api/reference/mediatype/object#media-type

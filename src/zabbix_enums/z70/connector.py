@@ -20,7 +20,7 @@ class ConnectorDataType(_ZabbixEnum):
     EVENTS = 1
 
 
-class ConnectorDataType(_ZabbixEnum):
+class ConnectorItemValueType(_ZabbixEnum):
     """
     https://www.zabbix.com/documentation/7.0/en/manual/api/reference/connector/object#connector
 
@@ -32,7 +32,8 @@ class ConnectorDataType(_ZabbixEnum):
     LOG = 4
     NUMERIC_UNSIGNED = 8
     UNSIGNED = 8
-    TEXT = 16
+    TEXT = 10
+    BINARY = 20
     ALL = 31
 
 

@@ -1,7 +1,38 @@
 # Changelog
 
+## [1.72.0] - 2025-01-09
+### Added
+- Added Zabbix version 7.2
+
+### Fixed
+- Added missing CHANGELOG entries
+- Fixed duplicate ConnectorDataType class
+- Fixed enum values for new ConnectorItemValueType class
+- Added missing MediaTypeContentType class for vertion 7.0
+
+
+## [1.70.0] - 2024-11-09
+### Added
+- Added Zabbix version 7.0
+- Added Zabbix version 6.4
+- Tests against more Python versions
+
+### Changed
+- Renamed DashboardWidgetField to DashboardWidgetFieldType
+- Renamed HostTLSAccept to ProxyTLSAccept for proxies
+
+### Fixed
+- Typo in HostIntrefaceUseIP enum
+- Various urls to docs
+- Removed some accidental imports
+- Various typos
+
+## [1.62.0] - 2023-07-25
+### Added
+- Added Zabbix version 6.2
+
 ## [1.60.0] - 2022-07-17
-## Added
+### Added
 - Added Zabbix version 6.0
 - Added enum form HA node object
 - Added enum for SLA object

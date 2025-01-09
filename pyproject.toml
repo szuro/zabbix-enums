@@ -17,5 +17,6 @@ envlist =
 
 [testenv]
 commands = python -m unittest discover
+whitelist_externals = python
 
 """

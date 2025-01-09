@@ -1,9 +1,9 @@
-"""https://www.zabbix.com/documentation/7.0/en/manual/api/reference/connector/object"""
+"""https://www.zabbix.com/documentation/7.2/en/manual/api/reference/connector/object"""
 from zabbix_enums import _ZabbixEnum
 
 class ConnectorProtocol(_ZabbixEnum):
     """
-    https://www.zabbix.com/documentation/7.0/en/manual/api/reference/connector/object#connector
+    https://www.zabbix.com/documentation/7.2/en/manual/api/reference/connector/object#connector
 
     Communication protocol.
     """
@@ -12,7 +12,7 @@ class ConnectorProtocol(_ZabbixEnum):
 
 class ConnectorDataType(_ZabbixEnum):
     """
-    https://www.zabbix.com/documentation/7.0/en/manual/api/reference/connector/object#connector
+    https://www.zabbix.com/documentation/7.2/en/manual/api/reference/connector/object#connector
 
     Data type.
     """
@@ -22,7 +22,7 @@ class ConnectorDataType(_ZabbixEnum):
 
 class ConnectorItemValueType(_ZabbixEnum):
     """
-    https://www.zabbix.com/documentation/7.0/en/manual/api/reference/connector/object#connector
+    https://www.zabbix.com/documentation/7.2/en/manual/api/reference/connector/object#connector
 
     A sum of item value types to be sent.
     """
@@ -39,7 +39,7 @@ class ConnectorItemValueType(_ZabbixEnum):
 
 class ConnectorAuthType(_ZabbixEnum):
     """
-    https://www.zabbix.com/documentation/7.0/en/manual/api/reference/connector/object#connector
+    https://www.zabbix.com/documentation/7.2/en/manual/api/reference/connector/object#connector
 
     HTTP authentication method.
     """
@@ -52,7 +52,7 @@ class ConnectorAuthType(_ZabbixEnum):
 
 class ConnectorVerifyPeer(_ZabbixEnum):
     """
-    https://www.zabbix.com/documentation/7.0/en/manual/api/reference/connector/object#connector
+    https://www.zabbix.com/documentation/7.2/en/manual/api/reference/connector/object#connector
     
     Whether to validate that the host's certificate is authentic.
     """
@@ -61,7 +61,7 @@ class ConnectorVerifyPeer(_ZabbixEnum):
 
 class ConnectorVerifyHost(_ZabbixEnum):
     """
-    https://www.zabbix.com/documentation/7.0/en/manual/api/reference/connector/object#connector
+    https://www.zabbix.com/documentation/7.2/en/manual/api/reference/connector/object#connector
     
     Whether to validate that the host name for the connection matches the one in the host's certificate.
     """
@@ -71,7 +71,7 @@ class ConnectorVerifyHost(_ZabbixEnum):
 
 class ConnectorStatus(_ZabbixEnum):
     """
-    https://www.zabbix.com/documentation/7.0/en/manual/api/reference/connector/object#connector
+    https://www.zabbix.com/documentation/7.2/en/manual/api/reference/connector/object#connector
     
     Whether the connector is enabled.
     """
@@ -81,7 +81,7 @@ class ConnectorStatus(_ZabbixEnum):
 
 class ConnectorTagsEvaltType(_ZabbixEnum):
     """
-    https://www.zabbix.com/documentation/7.0/en/manual/api/reference/connector/object#connector
+    https://www.zabbix.com/documentation/7.2/en/manual/api/reference/connector/object#connector
     
     Tag evaluation method.
     """
@@ -91,7 +91,7 @@ class ConnectorTagsEvaltType(_ZabbixEnum):
 
 class TagFilerOperator(_ZabbixEnum):
     """
-    https://www.zabbix.com/documentation/7.0/en/manual/api/reference/connector/object#tag-filter
+    https://www.zabbix.com/documentation/7.2/en/manual/api/reference/connector/object#tag-filter
     
     Condition operator.
     """

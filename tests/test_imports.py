@@ -8,3 +8,4 @@ from zabbix_enums.z62 import *
 from zabbix_enums.z64 import *
 from zabbix_enums.z70 import *
 from zabbix_enums.z72 import *
+from zabbix_enums.z74 import *

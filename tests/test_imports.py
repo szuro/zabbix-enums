@@ -1,11 +1,25 @@
-from unittest import TestCase
 
-from zabbix_enums.z50 import *
-from zabbix_enums.z52 import *
-from zabbix_enums.z54 import *
-from zabbix_enums.z60 import *
-from zabbix_enums.z62 import *
-from zabbix_enums.z64 import *
-from zabbix_enums.z70 import *
-from zabbix_enums.z72 import *
-from zabbix_enums.z74 import *
+from unittest import TestCase
+import warnings
+import os
+import importlib
+
+
+class TestImports(TestCase):
+
+    def setUp(self) -> None:
+        self.versions = filter(
+            lambda x: '.py' not in x,
+            os.listdir(os.path.join(os.path.dirname(__file__), '..', 'src', 'zabbix_enums'))
+        )
+        return super().setUp()
+
+    def test_latest_imports(self):
+        from zabbix_enums.latest.host import HostStatus as LatestHostStatus
+        from zabbix_enums.z74.host import HostStatus as Z74HostStatus
+        self.assertTrue(LatestHostStatus is Z74HostStatus, "LatestHostStatus should be the same as Z74HostStatus")
+    
+    def test_latest_lts_imports(self):
+        from zabbix_enums.latest_lts.host import HostStatus as LatestLTSHostStatus
+        from zabbix_enums.z70.host import HostStatus as Z70HostStatus
+        self.assertTrue(LatestLTSHostStatus is Z70HostStatus, "LatestLTSHostStatus should be the same as Z70HostStatus")

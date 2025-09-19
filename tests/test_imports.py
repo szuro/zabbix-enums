@@ -6,14 +6,6 @@ import importlib
 
 
 class TestImports(TestCase):
-
-    def setUp(self) -> None:
-        self.versions = filter(
-            lambda x: '.py' not in x,
-            os.listdir(os.path.join(os.path.dirname(__file__), '..', 'src', 'zabbix_enums'))
-        )
-        return super().setUp()
-
     def test_latest_imports(self):
         from zabbix_enums.latest.host import HostStatus as LatestHostStatus
         from zabbix_enums.z74.host import HostStatus as Z74HostStatus

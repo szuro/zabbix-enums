@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.74.0] - 2026-09-19
+### Added
+- Added Zabbix version 7.4
+- Added import aliases: latest, latest_lts
+
+### Fixed
+- Removed Prometheus Pattern preprocessing from LLD Rules
+
+### Modified
+- Support modern Python versions
+
 ## [1.72.0] - 2025-01-09
 ### Added
 - Added Zabbix version 7.2
